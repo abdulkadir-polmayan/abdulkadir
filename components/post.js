@@ -9,13 +9,12 @@ const Blog = (props) => {
   };
 
   return (
-    <div>
-        <div>
-            <h1>{props.title}</h1>
-            <img src={props.img} />
-      <button onClick={openBlog}>sağlmasa</button>
-
-        </div>
+    <div key={props.id}>
+      <div>
+        <h1>{props.title}</h1>
+        {/* <img src={props.img} /> */}
+        <button onClick={openBlog}>sağlmasa</button>
+      </div>
       <div style={{ display: blog ? null : "none" }}>
         <PortableText value={props.body} />
       </div>

@@ -29,7 +29,7 @@ export default function Home() {
         setData(data);
       });
   }, []);
-
+console.log("fghj")
   return (
     <div>
       {data &&

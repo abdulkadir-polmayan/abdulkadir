@@ -29,7 +29,6 @@ export default function Home() {
         setData(data);
       });
   }, []);
-  console.log(data);
 
   return (
     <div>

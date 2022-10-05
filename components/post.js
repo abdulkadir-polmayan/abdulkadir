@@ -2,7 +2,7 @@ import { useState } from "react";
 import { PortableText } from "@portabletext/react";
 
 const Blog = (props) => {
-  const [blog, setBlog] = useState(false);
+  const [blog, setBlog] = useState(true);
 
   const openBlog = () => {
     setBlog((prev) => !prev);

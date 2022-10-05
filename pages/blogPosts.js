@@ -6,33 +6,34 @@ import sanityClient from "../client/client";
 import Post from "../components/post";
 
 export default function Blogs({ post }) {
-  const [data, setData] = useState(null);
+  // const [data, setData] = useState(null);
 
-  useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "post"]{
-        title,
-        slug,
-        author,
-        mainImage{
-          asset->{
-            _id,
-            url
-          },
-        },
-        categories,
-        publishedAt,
-        body,
-      }`
-      )
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
+  // useEffect(() => {
+  //   sanityClient
+  //     .fetch(
+  //       `*[_type == "post"]{
+  //       title,
+  //       slug,
+  //       author,
+  //       mainImage{
+  //         asset->{
+  //           _id,
+  //           url
+  //         },
+  //       },
+  //       categories,
+  //       publishedAt,
+  //       body,
+  //     }`
+  //     )
+  //     .then((data) => {
+  //       setData(data);
+  //     });
+  // }, []);
   const builder = imageUrlBuilder(sanityClient);
 
   const urlFor = (source) => builder.image(source);
+
   return (
     <div className="overflow-hidden">
       <navbar className="">

@@ -3,13 +3,15 @@ import { PortableText } from "@portabletext/react";
 
 const Blog = (props) => {
   const [blog, setBlog] = useState(true);
+  const [move, setMove] = useState(true);
 
   const openBlog = () => {
     setBlog((prev) => !prev);
+    setMove((prev) => !prev);
   };
 
   return (
-    <div key={props.id} className="border-solid border-2 border-sky-500 m-2">
+    <div key={props.id} className={`border-solid m-2 border-pink-800 border-2`}>
       <div className="p-2 flex flex-col">
         <div className="flex">
           <img className="rounded" src={props.img} />
@@ -17,14 +19,22 @@ const Blog = (props) => {
         </div>
         <div className="text-center">
           <button
-            className="open transition hover:bg-slate-700 text-center border-solid border-b-2 border-sky-500 m-2 "
+            className={`transition ${
+              blog ? "" : "translate-y-1"
+            } text-center border-solid border-b-2 border-sky-500 m-2 `}
             onClick={openBlog}
           >
             open article
           </button>
         </div>
       </div>
-      <div className={` ${blog ? "invisible absolute" : "block"} p-2 transition `}>
+      <div
+        className={`transition ${
+          blog
+            ? "invisible -translate-y-6 absolute"
+            : "block translate-y-0 opacity-100"
+        } p-2 transition `}
+      >
         <PortableText value={props.body} />
       </div>
     </div>

@@ -5,7 +5,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import sanityClient from "../client/client";
 import Post from "../components/post";
 
-export default function Blogs() {
+export default function Blogs({ post }) {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -45,19 +45,27 @@ export default function Blogs() {
         </div>
       </navbar>
 
-      {data &&
-        data.map((item, index) => (
-          <div key={index} className="">
-            {item.mainImage && (
-              <Post
-                id={index}
-                body={item.body}
-                img={urlFor(item.mainImage).width(77).height(77).url()}
-                title={item.title}
-              />
-            )}
-          </div>
-        ))}
+      {post.map((item, index) => (
+        <div key={index} className="">
+          {item.mainImage && (
+            <Post
+              id={index}
+              body={item.body}
+              img={urlFor(item.mainImage).width(77).height(77).url()}
+              title={item.title}
+            />
+          )}
+        </div>
+      ))}
     </div>
   );
 }
+
+export const getServerSideProps = async () => {
+  const query = '*[_type == "post"]';
+  const post = await sanityClient.fetch(query);
+
+  return {
+    props: { post },
+  };
+};

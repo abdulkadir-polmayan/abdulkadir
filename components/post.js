@@ -24,12 +24,12 @@ const Blog = (props) => {
           </button>
         </div>
       </div>
-      <div className={`${blog ? "hidden" : "block"} p-2 transition `}>
+      <div className={` ${blog ? "invisible absolute" : "block"} p-2 transition `}>
         <PortableText value={props.body} />
       </div>
     </div>
   );
 };
-//
+//${blog ? "hidden" : "block"}
 
 export default Blog;

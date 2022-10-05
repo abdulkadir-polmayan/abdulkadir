@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import sanityClient, { urlFor } from "../client/client";
 import Post from "../components/post";
-export default function Home() {
+export default function Blogs() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -32,7 +32,8 @@ export default function Home() {
   console.log("fghj");
   return (
     <div>
-      {/* {data &&
+      <Link href="/">fghjkl</Link>
+      {data &&
         data.map((item, index) => (
           <Post
             key={index}
@@ -41,9 +42,7 @@ export default function Home() {
             img={urlFor(item.mainImage).width(200).url()}
             title={item.title}
           />
-        ))} */}
-      <h1>abdulkkanfşgs</h1>
-      <Link href="/blogPosts">segdg</Link>
+        ))}
     </div>
   );
 }

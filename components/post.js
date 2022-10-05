@@ -12,7 +12,7 @@ const Blog = (props) => {
     <div key={props.id}>
       <div>
         <h1>{props.title}</h1>
-        {/* <img src={props.img} /> */}
+        <img src={props.img} />
         <button onClick={openBlog}>sağlmasa</button>
       </div>
       <div style={{ display: blog ? null : "none" }}>

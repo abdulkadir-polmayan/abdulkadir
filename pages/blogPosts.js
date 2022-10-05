@@ -5,9 +5,6 @@ import imageUrlBuilder from "@sanity/image-url";
 import sanityClient from "../client/client";
 import Post from "../components/post";
 
-
-
-
 export default function Blogs() {
   const [data, setData] = useState(null);
 
@@ -41,21 +38,15 @@ export default function Blogs() {
       <Link href="/">fghjkl</Link>
       {data &&
         data.map((item, index) => (
-            <div>
-               {item.mainImage&& <Post
-            key={index}
-            id={index}
-            body={item.body}
-            img={urlFor(item.mainImage).width(200).url()}
-            title={item.title}
-          /> }
-          {/* <Post
-            key={index}
-            id={index}
-            body={item.body}
-            img={urlFor(item.mainImage).width(200).url()}
-            title={item.title}
-          /> */}
+          <div key={index}>
+            {item.mainImage && (
+              <Post
+                id={index}
+                body={item.body}
+                img={urlFor(item.mainImage).width(200).url()}
+                title={item.title}
+              />
+            )}
           </div>
         ))}
     </div>

@@ -3,11 +3,9 @@ import { PortableText } from "@portabletext/react";
 
 const Blog = (props) => {
   const [blog, setBlog] = useState(true);
-  const [move, setMove] = useState(true);
 
   const openBlog = () => {
     setBlog((prev) => !prev);
-    setMove((prev) => !prev);
   };
 
   return (
@@ -34,10 +32,10 @@ const Blog = (props) => {
         </div>
       </div>
       <div
-        className={`transition ${
+        className={`transition duration-300 ${
           blog
-            ? "invisible -translate-y-6 absolute"
-            : "block translate-y-0 opacity-100"
+            ? "invisible -translate-y-6 opacity-0 absolute"
+            : "block translate-y-1  "
         } p-2 transition `}
       >
         <PortableText value={props.body} />

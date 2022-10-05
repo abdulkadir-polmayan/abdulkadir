@@ -11,7 +11,12 @@ const Blog = (props) => {
   };
 
   return (
-    <div key={props.id} className={`border-solid m-2 border-pink-800 border-2`}>
+    <div
+      key={props.id}
+      className={`border-solid m-2 transition rounded ${
+        blog ? "bg-slate-100" : "bg-slate-200"
+      }`}
+    >
       <div className="p-2 flex flex-col">
         <div className="flex">
           <img className="rounded" src={props.img} />

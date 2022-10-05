@@ -34,16 +34,25 @@ export default function Blogs() {
 
   const urlFor = (source) => builder.image(source);
   return (
-    <div>
-      <Link href="/">fghjkl</Link>
+    <div className="overflow-hidden">
+      <navbar className="">
+        <div className="flex justify-between p-3">
+          <h2>
+            <Link href="/">back home</Link>
+          </h2>
+          <h1>BLOGS</h1>
+          <h3>how i did</h3>
+        </div>
+      </navbar>
+
       {data &&
         data.map((item, index) => (
-          <div key={index}>
+          <div key={index} className="">
             {item.mainImage && (
               <Post
                 id={index}
                 body={item.body}
-                img={urlFor(item.mainImage).width(200).url()}
+                img={urlFor(item.mainImage).width(77).height(77).url()}
                 title={item.title}
               />
             )}

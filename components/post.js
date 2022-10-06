@@ -1,15 +1,19 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { PortableText } from "@portabletext/react";
+import autoAnimate from "@formkit/auto-animate";
 
 const Blog = (props) => {
-  const [blog, setBlog] = useState(true);
-
+  const [blog, setBlog] = useState(false);
+  const parent = useRef(null);
   const openBlog = () => {
     setBlog((prev) => !prev);
   };
-
+  useEffect(() => {
+    parent.current && autoAnimate(parent.current);
+  }, [parent]);
   return (
     <div
+      ref={parent}
       key={props.id}
       className={`border-solid m-2 transition rounded ${
         blog ? "bg-slate-100" : "bg-slate-200"
@@ -22,24 +26,18 @@ const Blog = (props) => {
         </div>
         <div className="text-center">
           <button
-            className={`transition ${
-              blog ? "" : "translate-y-1"
-            } text-center border-solid border-b-2 border-sky-500 m-2 `}
+            className={`  text-center border-solid border-b-2 border-sky-500 m-2 `}
             onClick={openBlog}
           >
             open article
           </button>
         </div>
       </div>
-      <div
-        className={`transition duration-300 ${
-          blog
-            ? "invisible -translate-y-6 opacity-0 absolute"
-            : "block translate-y-1  "
-        } p-2 transition `}
-      >
-        <PortableText value={props.body} />
-      </div>
+      {blog && (
+        <div className={` duration-300  p-2  `}>
+          <PortableText value={props.body} />
+        </div>
+      )}
     </div>
   );
 };

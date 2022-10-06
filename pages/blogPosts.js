@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import imageUrlBuilder from "@sanity/image-url";
 import sanityClient from "../client/client";
 import Post from "../components/post";
+import { BsChevronLeft } from "react-icons/bs";
 
 export default function Blogs({ post }) {
   // const [data, setData] = useState(null);
@@ -37,11 +38,12 @@ export default function Blogs({ post }) {
   return (
     <div className="overflow-hidden">
       <navbar className="">
-        <div className="flex justify-between p-3">
-          <h2>
+        <div className="flex justify-between p-3 	">
+          <h2 className="flex font-monsterrat font-semibold justify-center items-center">
+            <BsChevronLeft className="h-5 w-5 mr-2" />
             <Link href="/">back home</Link>
           </h2>
-          <h1>BLOGS</h1>
+          <h1 className="font-merri">BLOGS</h1>
           <h3>how i did</h3>
         </div>
       </navbar>

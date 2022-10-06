@@ -5,6 +5,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import sanityClient from "../client/client";
 import Post from "../components/post";
 import { BsChevronLeft } from "react-icons/bs";
+import { PortableText } from "@portabletext/react";
 
 export default function Blogs({ post }) {
   // const [data, setData] = useState(null);
@@ -37,8 +38,8 @@ export default function Blogs({ post }) {
 
   return (
     <div className="overflow-hidden">
-      <navbar className="">
-        <div className="flex justify-between p-3 	">
+      <div className="p-3 fixed top-0 z-30 w-full">
+        <div className="flex justify-between p-3 m-3 bg-slate-300 rounded sticky top-0	">
           <h2 className="flex font-monsterrat font-semibold justify-center items-center">
             <BsChevronLeft className="h-5 w-5 mr-2" />
             <Link href="/">back home</Link>
@@ -46,20 +47,22 @@ export default function Blogs({ post }) {
           <h1 className="font-merri">BLOGS</h1>
           <h3>how i did</h3>
         </div>
-      </navbar>
-
-      {post.map((item, index) => (
-        <div key={index} className="">
-          {item.mainImage && (
-            <Post
-              id={index}
-              body={item.body}
-              img={urlFor(item.mainImage).width(77).height(77).url()}
-              title={item.title}
-            />
-          )}
-        </div>
-      ))}
+      </div>
+      <div className="mt-24">
+        {post.map((item, index) => (
+          <div key={index} className="">
+            {item.mainImage && (
+              <Post
+                id={index}
+                body={item.body}
+                img={urlFor(item.mainImage).width(77).height(77).url()}
+                // articleImage={}
+                title={item.title}
+              />
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

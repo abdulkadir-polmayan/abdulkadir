@@ -1,5 +1,8 @@
 import { useState, useRef, useEffect } from "react";
-import { PortableText } from "@portabletext/react";
+import {
+  PortableText,
+  PortableTextComponentsProvider,
+} from "@portabletext/react";
 import autoAnimate from "@formkit/auto-animate";
 
 const Blog = (props) => {
@@ -11,6 +14,7 @@ const Blog = (props) => {
   useEffect(() => {
     parent.current && autoAnimate(parent.current);
   }, [parent]);
+
   return (
     <div
       ref={parent}
@@ -19,7 +23,7 @@ const Blog = (props) => {
         blog ? "bg-slate-100" : "bg-slate-200"
       }`}
     >
-      <div className="p-2 flex flex-col">
+      <div className="article-face p-2 flex flex-col">
         <div className="flex">
           <img className="rounded" src={props.img} />
           <h1 className="p-2 text-xl font-bold">{props.title}</h1>
@@ -33,8 +37,9 @@ const Blog = (props) => {
           </button>
         </div>
       </div>
+
       {blog && (
-        <div className={` duration-300  p-2  `}>
+        <div className={` duration-300  p-2 prose `}>
           <PortableText value={props.body} />
         </div>
       )}

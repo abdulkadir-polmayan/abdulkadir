@@ -2,10 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import imageUrlBuilder from "@sanity/image-url";
+import urlBuilder from "@sanity/image-url";
 import sanityClient from "../client/client";
 import Post from "../components/post";
 import { BsChevronLeft } from "react-icons/bs";
 import { PortableText } from "@portabletext/react";
+import { getImageDimensions } from "@sanity/asset-utils";
 
 export default function Blogs({ post }) {
   // const [data, setData] = useState(null);
@@ -36,6 +38,44 @@ export default function Blogs({ post }) {
 
   const urlFor = (source) => builder.image(source);
 
+  const SampleImageComponent = ({ value, isInline }) => {
+    const { width, height } = getImageDimensions(value);
+    return (
+      <img
+        src={urlBuilder()
+          .image(value)
+          .width(isInline ? 100 : 800)
+          .fit("max")
+          .auto("format")
+          .url()}
+        alt={value.alt || " "}
+        loading="lazy"
+        style={{
+          // Display alongside text if image appears inside a block text span
+          display: isInline ? "inline-block" : "block",
+
+          // Avoid jumping around with aspect-ratio CSS property
+          aspectRatio: width / height,
+        }}
+      />
+    );
+  };
+
+  const components = {
+    types: {
+      image: ({ value }) => (
+        <img
+          src={urlFor()
+            .image(value)
+            .width(200)
+            .fit("max")
+            .auto("format")
+            .url()}
+        />
+      ),
+    },
+  };
+
   return (
     <div className="overflow-hidden">
       <div className="p-3 fixed top-0 z-30 w-full">
@@ -48,6 +88,9 @@ export default function Blogs({ post }) {
           <h3>how i did</h3>
         </div>
       </div>
+      <div className="prose">
+        <PortableText value={post[0].body} components={components} />
+      </div>
       <div className="mt-24">
         {post.map((item, index) => (
           <div key={index} className="">
@@ -56,7 +99,7 @@ export default function Blogs({ post }) {
                 id={index}
                 body={item.body}
                 img={urlFor(item.mainImage).width(77).height(77).url()}
-                // articleImage={}
+                components={components}
                 title={item.title}
               />
             )}

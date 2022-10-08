@@ -40,7 +40,7 @@ const Blog = (props) => {
 
       {blog && (
         <div className={` duration-300  p-2 prose `}>
-          <PortableText value={props.body} />
+          <PortableText value={props.body} components={props.components} />
         </div>
       )}
     </div>

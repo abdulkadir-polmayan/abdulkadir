@@ -33,7 +33,9 @@ const Blog = (props) => {
           <div ref={parent2}>
             <h1 className="ml-4 p-2 text-xl font-bold">{props.title}</h1>
             {blog ? null : (
-              <p className="pl-4 pr-1 text-inherit">{props.sentence}</p>
+              <p className="pl-4 pr-1 text-inherit font-serif">
+                {props.sentence}
+              </p>
             )}
           </div>
         </div>
@@ -47,7 +49,7 @@ const Blog = (props) => {
         </div>
       </div>
       {blog && (
-        <div className={` duration-300  p-2 prose `}>
+        <div className={` duration-300  p-2 prose font-serif tracking-tight `}>
           <PortableText value={props.body} components={props.components} />
         </div>
       )}

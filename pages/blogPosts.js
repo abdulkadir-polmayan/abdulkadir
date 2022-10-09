@@ -63,7 +63,7 @@ export default function Blogs({ post }) {
         </div>
       </div>
 
-      <div className="mt-16 lg:mx-80 ">
+      <div className="mt-16 lg:mx-80 divide-y-4 mx-1  divide-slate-400/25 ">
         {post.map((item, index) => (
           <div key={index} className="">
             {item.mainImage && (

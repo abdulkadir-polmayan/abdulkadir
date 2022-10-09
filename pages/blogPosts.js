@@ -49,7 +49,7 @@ export default function Blogs({ post }) {
   return (
     <div className="overflow-hidden">
       <div className="p-0 fixed top-0 z-30 w-full">
-        <div className="flex justify-between  p-3 backdrop-blur-sm bg-white/60 rounded sticky top-0	">
+        <div className="lg:mx-56 flex justify-between  p-3 backdrop-blur-sm bg-white/60 rounded sticky top-0	">
           <h2 className="flex  left-0 flex-1 font-roboto   items-center">
             <BsChevronLeft className="h-5 w-5 mr-2" />
             <Link href="/">back home</Link>
@@ -63,7 +63,7 @@ export default function Blogs({ post }) {
         </div>
       </div>
 
-      <div className="mt-16">
+      <div className="mt-16 lg:mx-80 ">
         {post.map((item, index) => (
           <div key={index} className="">
             {item.mainImage && (

@@ -74,6 +74,7 @@ export default function Blogs({ post }) {
                 img={urlFor(item.mainImage).width(77).height(77).url()}
                 components={components}
                 title={item.title}
+                sentence={item.sentence}
               />
             )}
           </div>

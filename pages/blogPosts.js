@@ -47,7 +47,7 @@ export default function Blogs({ post }) {
   };
 
   return (
-    <div className="overflow-hidden bg-white ">
+    <div className="overflow-hidden bg-white text-black">
       <div className="p-0 fixed top-0 z-30 w-full">
         <div className="lg:mx-56 flex justify-between  p-3 backdrop-blur-sm bg-white/60 rounded sticky top-0	">
           <h2 className="flex  left-0 flex-1 font-roboto   items-center">

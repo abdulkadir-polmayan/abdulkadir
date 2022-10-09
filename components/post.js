@@ -27,13 +27,16 @@ const Blog = (props) => {
         blog ? "bg-slate-50" : "bg-slate-0"
       }`}
     >
+      
       <div className="article-face p-2 flex flex-row justify-between ">
         <div className="flex items-center">
           <img className="rounded" src={props.img} />
           <div ref={parent2}>
-            <h1 className="ml-4 p-2 text-xl font-bold">{props.title}</h1>
+            <h1 className="ml-4 p-2 text-2xl font-semibold tracking-wide">
+              {props.title}
+            </h1>
             {blog ? null : (
-              <p className="pl-4 pr-1 text-inherit font-serif">
+              <p className="pl-4 pr-1 text-black/70 font-serif">
                 {props.sentence}
               </p>
             )}
@@ -49,7 +52,9 @@ const Blog = (props) => {
         </div>
       </div>
       {blog && (
-        <div className={` duration-300  p-2 prose font-serif tracking-tight `}>
+        <div
+          className={` duration-300 text-xl text-black p-2 prose font-serif tracking-tight `}
+        >
           <PortableText value={props.body} components={props.components} />
         </div>
       )}

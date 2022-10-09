@@ -64,14 +64,7 @@ export default function Blogs({ post }) {
   const components = {
     types: {
       image: ({ value }) => (
-        <img
-          src={urlFor()
-            .image(value)
-            .width(200)
-            .fit("max")
-            .auto("format")
-            .url()}
-        />
+        <img src={urlFor().image(value).width(400).height(200).url()} />
       ),
     },
   };
@@ -88,9 +81,7 @@ export default function Blogs({ post }) {
           <h3>how i did</h3>
         </div>
       </div>
-      <div className="prose">
-        <PortableText value={post[0].body} components={components} />
-      </div>
+
       <div className="mt-24">
         {post.map((item, index) => (
           <div key={index} className="">

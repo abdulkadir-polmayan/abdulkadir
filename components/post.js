@@ -20,20 +20,23 @@ const Blog = (props) => {
       ref={parent}
       key={props.id}
       className={`border-solid m-2 transition rounded ${
-        blog ? "bg-slate-100" : "bg-slate-200"
+        blog ? "bg-slate-200" : "bg-slate-100"
       }`}
     >
       <div className="article-face p-2 flex flex-col">
         <div className="flex">
           <img className="rounded" src={props.img} />
-          <h1 className="p-2 text-xl font-bold">{props.title}</h1>
+          <div>
+            <p>{props.date}</p>
+            <h1 className="p-2 text-xl font-bold">{props.title}</h1>
+          </div>
         </div>
         <div className="text-center">
           <button
-            className={`  text-center border-solid border-b-2 border-sky-500 m-2 `}
+            className={`  text-center font-semibold bg-slate-300 rounded px-2 py-1 `}
             onClick={openBlog}
           >
-            open article
+            Open article
           </button>
         </div>
       </div>

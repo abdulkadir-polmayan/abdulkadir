@@ -38,29 +38,6 @@ export default function Blogs({ post }) {
 
   const urlFor = (source) => builder.image(source);
 
-  const SampleImageComponent = ({ value, isInline }) => {
-    const { width, height } = getImageDimensions(value);
-    return (
-      <img
-        src={urlBuilder()
-          .image(value)
-          .width(isInline ? 100 : 800)
-          .fit("max")
-          .auto("format")
-          .url()}
-        alt={value.alt || " "}
-        loading="lazy"
-        style={{
-          // Display alongside text if image appears inside a block text span
-          display: isInline ? "inline-block" : "block",
-
-          // Avoid jumping around with aspect-ratio CSS property
-          aspectRatio: width / height,
-        }}
-      />
-    );
-  };
-
   const components = {
     types: {
       image: ({ value }) => (
@@ -71,22 +48,27 @@ export default function Blogs({ post }) {
 
   return (
     <div className="overflow-hidden">
-      <div className="p-3 fixed top-0 z-30 w-full">
-        <div className="flex justify-between p-3 m-3 bg-slate-300 rounded sticky top-0	">
-          <h2 className="flex font-monsterrat font-semibold justify-center items-center">
+      <div className="p-0 fixed top-0 z-30 w-full">
+        <div className="flex justify-between  p-3 backdrop-blur-sm bg-white/60 rounded sticky top-0	">
+          <h2 className="flex  left-0 flex-1 font-roboto   items-center">
             <BsChevronLeft className="h-5 w-5 mr-2" />
             <Link href="/">back home</Link>
           </h2>
-          <h1 className="font-merri">BLOGS</h1>
-          <h3>how i did</h3>
+          <h1 className="font-bold text-2xl text-center flex-1">BLOGS</h1>
+          <div className="flex-1  text-center items-center grid justify-items-end">
+            <button className="px-2 py-1 rounded backdrop-blur-sm bg-sky-300/40">
+              How I did
+            </button>
+          </div>
         </div>
       </div>
 
-      <div className="mt-24">
+      <div className="mt-16">
         {post.map((item, index) => (
           <div key={index} className="">
             {item.mainImage && (
               <Post
+                // date={item.publishedAt}
                 id={index}
                 body={item.body}
                 img={urlFor(item.mainImage).width(77).height(77).url()}

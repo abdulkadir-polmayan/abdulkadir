@@ -28,10 +28,10 @@ const Blog = (props) => {
       }`}
     >
       <div className="article-face p-2 flex flex-row justify-between ">
-        <div className="flex items-center">
+        <div className={`flex ${blog ? null : null}  items-center`}>
           <img className="rounded shadow-lg" src={props.img} />
-          <div ref={parent2}>
-            <h1 className="ml-4 p-2 text-2xl font-semibold tracking-wide">
+          <div className="" ref={parent2}>
+            <h1 className="ml-4 p-2 text-2xl  font-semibold tracking-wide">
               {props.title}
             </h1>
             {blog ? null : (

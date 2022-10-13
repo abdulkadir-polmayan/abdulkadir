@@ -41,7 +41,7 @@ export default function Blogs({ post }) {
   const components = {
     types: {
       image: ({ value }) => (
-        <img src={urlFor().image(value).width(400).height(200).url()} />
+        <img src={urlFor().image(value).width(800).height(400).url()} />
       ),
     },
   };

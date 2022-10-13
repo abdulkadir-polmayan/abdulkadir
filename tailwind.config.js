@@ -6,10 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        merri: ['"Merriweather"'],
-        monsterrat: ['"Montserrat"'],
-      },
+      fontFamily: {},
     },
   },
   plugins: [require("@tailwindcss/typography")],

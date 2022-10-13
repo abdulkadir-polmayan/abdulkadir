@@ -55,7 +55,7 @@ export default function Blogs({ post }) {
         <div className=" flex-auto my-5 md:p-5">
           <Link href="/">
             <p className="select-none font-serif underline text-xl">
-            What's going on here ?
+            What's going on here ? dsggf
             </p>
           </Link>
         </div>

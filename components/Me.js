@@ -8,9 +8,9 @@ const Me = () => {
     alert("cvbn");
   }
   return (
-    <div>
+    <div className="over">
       <header className="p-3 transition">
-        <h1 className="text-7xl font-serif transition font-weight duration-300 hover:font-bold">
+        <h1 className="text-7xl font-serif">
           Abdulkadir Şenel
         </h1>
 

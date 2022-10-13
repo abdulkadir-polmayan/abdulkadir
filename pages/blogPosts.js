@@ -48,9 +48,20 @@ export default function Blogs({ post }) {
 
   return (
     <div className="overflow-hidden bg-white text-black">
-      <Navbar />
+      <div className="flex flex-col md:flex-row p-4">
+        <div className=" flex-1">
+          <h1 className="text-9xl font-bold font-serif">Blogs</h1>
+        </div>
+        <div className=" flex-auto my-5 md:p-5">
+          <Link href="/">
+            <p className="select-none font-serif underline text-xl">
+            What's going on here ?
+            </p>
+          </Link>
+        </div>
+      </div>
 
-      <div className="mt-16 lg:mx-80 divide-y-4 mx-1  divide-slate-400/25 ">
+      <div className="mt-12lg:mx-80 divide-y-4 mx-1  divide-slate-400/25 ">
         {post.map((item, index) => (
           <div key={index} className="">
             {item.mainImage && (

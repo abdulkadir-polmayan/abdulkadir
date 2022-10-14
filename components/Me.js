@@ -21,12 +21,12 @@ const Me = () => {
   }, [parent2]);
 
   return (
-    <div className="md:p-20 flex flex-col md:flex-row">
+    <div className="max-w-2xl flex flex-col md:flex-row ">
       {/* <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
         <img></img>
       </div> */}
 
-      <header ref={parent} className="p-3 transition">
+      <header ref={parent} className="p-2 transition">
         <div className="p-3 mb-5 flex justify-start">
           <Link href="/blogPosts">
             <button className="bg-gradient-to-r  from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
@@ -82,13 +82,13 @@ const Me = () => {
               expo
             </a>{" "}
             <br></br>{" "}
-            <h4 className="mt-2 ">
+            <h4 className="mt-2 italic">
               {" "}
-              My point of view is <br></br> be nice, make it easy, do simple
-              things.
+              " My point of view is <br></br> be nice, make it easy, do simple
+              things."
             </h4>
           </p>
-          <div className="flex items-center flex-col justify-center bg-gradient-to-t mt-[10%]  from-indigo-200 via-blue-200 to-transparent decoration-indigo-500 p-4 rounded">
+          <div className="flex items-center flex-col justify-center mt-[10%]  p-4 ">
             <button className="mt-4 text-3xl font-serif font-black flex">
               <Link href="/">These are my projects.</Link>
             </button>
@@ -98,12 +98,13 @@ const Me = () => {
               </div>
               <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
                 <img></img>
-              </div>   <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
+              </div>{" "}
+              <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
                 <img></img>
-              </div>   <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
+              </div>{" "}
+              <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
                 <img></img>
               </div>
-              
             </div>
           </div>
           {/* <div

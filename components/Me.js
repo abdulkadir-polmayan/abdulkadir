@@ -24,7 +24,7 @@ const Me = () => {
     <div className="over">
       <div className="p-3 ">
         <Link href="/blogPosts">
-          <button className="bg-gradient-to-r from-indigo-200 via-blue-100/50 to-transparent p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
+          <button className="bg-gradient-to-r decoration-indigo-500 from-indigo-200 via-blue-100/50 to-transparent p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
             Go to my blogs <BsChevronRight className="h-5 w-5 ml-4" />
           </button>
         </Link>
@@ -53,7 +53,7 @@ const Me = () => {
                 I am jr mobile app developer . I know <br></br> react - sanity -
                 next - tailwind - expo - firebase <br></br> I made some project
                 solve problems and my main perspective when developing app is
-                make it simple (understable) and solving problems. these are my
+                make it simple (understable) and solving problems.these are my
                 projects.
               </p>
             )}

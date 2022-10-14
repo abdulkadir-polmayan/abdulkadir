@@ -23,7 +23,7 @@ const Blog = (props) => {
     <div
       ref={parent}
       key={props.id}
-      className={` border-solid m-2 transition rounded lg:px-16 lg:py-8 ${
+      className={` border-solid m-2 transition rounded bg-gradient-to-r shadow-xl from-green-300/50 to-green-100 ${
         blog ? "bg-slate-50" : "bg-slate-0"
       }`}
     >

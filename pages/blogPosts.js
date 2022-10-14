@@ -47,12 +47,10 @@ export default function Blogs({ post }) {
   };
 
   return (
-    <div className="overflow-hidden bg-white text-black">
+    <div className="overflow-hidden flex items-center flex-col bg-white text-black">
       <div className="flex flex-col md:flex-row p-4">
-        <div className=" flex-1">
-          <h1 className="text-9xl font-bold font-serif">Blogs</h1>
-        </div>
-        <div className=" flex-auto my-5 md:p-5">
+        <h1 className="text-9xl font-bold font-serif text-left">Blogs</h1>
+        <div className=" flex-auto my-5 md:p-5 flex items-end">
           <Link href="/">
             <p className="select-none font-serif underline text-xl">
               Whats going on here ?
@@ -61,9 +59,9 @@ export default function Blogs({ post }) {
         </div>
       </div>
 
-      <div className="mt-12lg:mx-80 divide-y-4 mx-1  divide-slate-400/25 ">
+      <div className="mt-12 flex flex-col items-center justify-center  mx-1 max-w-xl  ">
         {post.map((item, index) => (
-          <div key={index} className="">
+          <div key={index} className="min-w-full">
             {item.mainImage && (
               <Post
                 // date={item.publishedAt}

@@ -27,7 +27,7 @@ const Me = () => {
       </div> */}
 
       <header ref={parent} className="p-3 transition">
-        <div className="p-3 mb-5 flex justify-end">
+        <div className="p-3 mb-5 flex justify-start">
           <Link href="/blogPosts">
             <button className="bg-gradient-to-r  from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
               Go to my blogs <BsChevronRight className="h-5 w-5 ml-4" />
@@ -40,50 +40,72 @@ const Me = () => {
           <h2 className="text-5xl font-serif italic font-bold flex-initial ">
             I am junior
           </h2>
-          <h3 className="text-2xl font-serif underline mt-4">
+          <h3 className="text-2xl font-serif font-semibold underline mt-4">
             Mobile App Developer
           </h3>
           <p className="leading-6 tracking-tight font-serif text-xl text-left py-2">
-            I am jr mobile app developer . <br></br> I know {"  "}
+            I know how to use <br></br> {"  "}
             <a
-              className="underline decoration-blue-500 font-bold"
+              className="underline decoration-blue-500 font-medium"
               href="https://www.instapaper.com/u"
             >
               react
-            </a>{"-"}
+            </a>
+            {"-"}
             {"  "}
             <a
-              className="underline font-bold"
+              className="underline font-medium"
               href="https://www.instapaper.com/u"
             >
               next.js
-            </a>{"-"}
+            </a>
+            {"-"}
             {"  "}
             <a
-              className="underline decoration-orange-500 font-bold"
+              className="underline decoration-orange-500 font-medium"
               href="https://www.instapaper.com/u"
             >
               sanity
             </a>{" "}
             {"-"}
             <a
-              className="underline decoration-indigo-500 font-bold"
+              className="underline decoration-indigo-500 font-medium"
               href="https://www.instapaper.com/u"
             >
               tailwind
             </a>{" "}
             {"-"}
             <a
-              className="underline font-bold"
+              className="underline font-medium"
               href="https://www.instapaper.com/u"
             >
               expo
             </a>{" "}
-            
-            <br></br> I made some project
-            solve problems and my main perspective when developing app is make
-            it simple (understable) and solving problems.these are my projects.
+            <br></br>{" "}
+            <h4 className="mt-2 ">
+              {" "}
+              My point of view is <br></br> be nice, make it easy, do simple
+              things.
+            </h4>
           </p>
+          <div className="flex items-center flex-col justify-center bg-gradient-to-t mt-[10%]  from-indigo-200 via-blue-200 to-transparent decoration-indigo-500 p-4 rounded">
+            <button className="mt-4 text-3xl font-serif font-black flex">
+              <Link href="/">These are my projects.</Link>
+            </button>
+            <div>
+              <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
+                <img></img>
+              </div>
+              <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
+                <img></img>
+              </div>   <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
+                <img></img>
+              </div>   <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
+                <img></img>
+              </div>
+              
+            </div>
+          </div>
           {/* <div
             className={`p-2 rounded mt-5 flex-initial ${dev && "bg-slate-100"}`}
           >

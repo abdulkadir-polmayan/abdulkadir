@@ -21,7 +21,7 @@ const Me = () => {
   }, [parent2]);
 
   return (
-    <div className="">
+    <div className="md:p-20">
       <div className="p-3 ">
         <Link href="/blogPosts">
           <button className="bg-gradient-to-r from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
@@ -47,7 +47,7 @@ const Me = () => {
             >
               <h3
                 className={`text-2xl font-serif underline flex items-center select-none ${
-                  dev && "font-bold"
+                  dev && "decoration-blue-500/50 "
                 } `}
               >
                 Mobile App Developer
@@ -75,7 +75,11 @@ const Me = () => {
                 setElt(!elt);
               }}
             >
-              <h3 className="text-2xl font-serif underline flex items-center select-none">
+              <h3
+                className={`text-2xl font-serif underline flex items-center select-none ${
+                  elt && "decoration-green-500/50 "
+                } `}
+              >
                 English Teacher
                 <BsChevronDown className="h-5 w-5 ml-4" />
               </h3>

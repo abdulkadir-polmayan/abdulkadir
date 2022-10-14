@@ -37,8 +37,7 @@ const Me = () => {
           <div
             ref={parent}
             className={`p-2 rounded mt-5 ${
-              dev &&
-              "bg-gradient-to-t from-blue-100 to-white"
+              dev && "bg-gradient-to-t from-blue-100 to-white"
             }`}
           >
             <button
@@ -46,7 +45,11 @@ const Me = () => {
                 setDev(!dev);
               }}
             >
-              <h3 className="text-2xl font-serif underline flex items-center select-none">
+              <h3
+                className={`text-2xl font-serif underline flex items-center select-none ${
+                  dev && "font-bold"
+                } `}
+              >
                 Mobile App Developer
                 <BsChevronDown className="h-5 w-5 ml-4" />
               </h3>

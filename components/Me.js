@@ -84,8 +84,8 @@ const Me = () => {
             <br></br>{" "}
             <h4 className="mt-2 italic">
               {" "}
-              " My point of view is <br></br> be nice, make it easy, do simple
-              things."
+              &quot; My point of view is <br></br> be nice, make it easy, do simple
+              things.&quot;
             </h4>
           </p>
           <div className="flex items-center flex-col justify-center mt-[10%]  p-4 ">

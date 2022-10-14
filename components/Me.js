@@ -24,7 +24,7 @@ const Me = () => {
     <div className="over">
       <div className="p-3 ">
         <Link href="/blogPosts">
-          <button className="bg-gradient-to-r decoration-indigo-500 from-indigo-200 via-blue-100/50 to-transparent p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
+          <button className="bg-gradient-to-r from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
             Go to my blogs <BsChevronRight className="h-5 w-5 ml-4" />
           </button>
         </Link>

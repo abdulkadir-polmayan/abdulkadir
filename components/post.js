@@ -23,8 +23,8 @@ const Blog = (props) => {
     <div
       ref={parent}
       key={props.id}
-      className={` border-solid m-2 transition rounded shadow-lg bg-gradient-to-r ${
-        blog ? "  from-green-300/50 to-green-100" : "from-green-200/50 to-green-100/40"
+      className={` border-solid m-2 transition shadow-lg backdrop-blur-sm bg-white/30  lg:px-16 lg:py-8 ${
+        blog ? "bg-slate-50" : "bg-slate-0"
       }`}
     >
       <div className="article-face p-2 flex flex-row justify-between ">

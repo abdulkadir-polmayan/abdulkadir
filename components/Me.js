@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Navbar from "./Navbar";
 import { BsChevronDown } from "react-icons/bs";
+import { BsChevronRight } from "react-icons/bs";
+
 import autoAnimate from "@formkit/auto-animate";
 
 const Me = () => {
@@ -20,6 +22,13 @@ const Me = () => {
 
   return (
     <div className="over">
+      <div className="p-3 ">
+        <Link href="/blogPosts">
+          <button className="bg-gradient-to-r from-indigo-200 via-blue-100/50 to-transparent p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
+            Go to my blogs <BsChevronRight className="h-5 w-5 ml-4" />
+          </button>
+        </Link>
+      </div>
       <header className="p-3 transition">
         <h1 className="text-7xl font-serif">Abdulkadir Şenel</h1>
 
@@ -59,25 +68,19 @@ const Me = () => {
               }}
             >
               <h3 className="text-2xl font-serif underline flex items-center select-none">
-                Mobile App Developer
+                English Teacher
                 <BsChevronDown className="h-5 w-5 ml-4" />
               </h3>
             </button>
             {elt && (
               <p className="leading-6 tracking-tight font-serif text-lg text-left py-2">
-                I am jr mobile app developer . I know <br></br> react - sanity -
-                next - tailwind - expo - firebase <br></br> I made some project
-                solve problems and my main perspective when developing app is
-                make it simple (understable) and solving problems. these are my
-                projects.
+                I am studieng Elt-Englih Language Teaching- department at İzmir
+                Democracy University.
               </p>
             )}
           </div>
         </div>
       </header>
-      <Link href="/blogPosts">
-        <button className="text-center">Go to my blogs</button>
-      </Link>
     </div>
   );
 };

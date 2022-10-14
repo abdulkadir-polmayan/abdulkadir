@@ -21,7 +21,7 @@ const Me = () => {
   }, [parent2]);
 
   return (
-    <div className="over">
+    <div className="">
       <div className="p-3 ">
         <Link href="/blogPosts">
           <button className="bg-gradient-to-r from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
@@ -36,7 +36,10 @@ const Me = () => {
           <h2 className="text-5xl font-serif italic font-bold ">I am junior</h2>
           <div
             ref={parent}
-            className={`p-2 rounded mt-5 ${dev && "bg-slate-100"}`}
+            className={`p-2 rounded mt-5 ${
+              dev &&
+              "bg-gradient-to-t from-blue-100 to-white"
+            }`}
           >
             <button
               onClick={() => {
@@ -60,7 +63,9 @@ const Me = () => {
           </div>
           <div
             ref={parent2}
-            className={`p-2 rounded mt-5 ${elt && "bg-slate-100"}`}
+            className={`p-2 rounded mt-5 ${
+              elt && "bg-gradient-to-t from-green-100  to-white"
+            }`}
           >
             <button
               onClick={() => {

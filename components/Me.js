@@ -21,24 +21,26 @@ const Me = () => {
   }, [parent2]);
 
   return (
-    <div className="md:p-20">
-      <div className="p-3 ">
-        <Link href="/blogPosts">
-          <button className="bg-gradient-to-r from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
-            Go to my blogs <BsChevronRight className="h-5 w-5 ml-4" />
-          </button>
-        </Link>
+    <div className="md:p-20 flex flex-col md:flex-row">
+      <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
+        <img></img>
       </div>
+
       <header className="p-3 transition">
+        <div className="p-3 mb-5 ">
+          <Link href="/blogPosts">
+            <button className="bg-gradient-to-r from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
+              Go to my blogs <BsChevronRight className="h-5 w-5 ml-4" />
+            </button>
+          </Link>
+        </div>
         <h1 className="text-7xl font-serif">Abdulkadir Şenel</h1>
 
         <div className="mt-10">
           <h2 className="text-5xl font-serif italic font-bold ">I am junior</h2>
           <div
             ref={parent}
-            className={`p-2 rounded mt-5 ${
-              dev && "bg-gradient-to-t from-blue-100 to-white"
-            }`}
+            className={`p-2 rounded mt-5 ${dev && "bg-slate-100"}`}
           >
             <button
               onClick={() => {
@@ -66,9 +68,7 @@ const Me = () => {
           </div>
           <div
             ref={parent2}
-            className={`p-2 rounded mt-5 ${
-              elt && "bg-gradient-to-t from-green-100  to-white"
-            }`}
+            className={`p-2 rounded mt-5 ${elt && "bg-slate-100"}`}
           >
             <button
               onClick={() => {

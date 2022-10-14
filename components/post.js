@@ -23,7 +23,7 @@ const Blog = (props) => {
     <div
       ref={parent}
       key={props.id}
-      className={` border-solid m-2 transition shadow-lg backdrop-blur-sm bg-white/30  lg:px-16 lg:py-8 ${
+      className={` border-solid m-2 transition shadow-lg backdrop-blur-sm bg-white/30  rounded lg:px-16 lg:py-8 ${
         blog ? "bg-slate-50" : "bg-slate-0"
       }`}
     >

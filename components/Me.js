@@ -34,9 +34,9 @@ const Me = () => {
       </div> */}
 
       <header ref={parent} className="p-2 transition">
-        <div className="p-3 mb-5 flex justify-start">
+        <div className="p-2 mb-5 flex justify-start">
           <Link href="/blogPosts">
-            <button className="bg-gradient-to-r  from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-4 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
+            <button className="bg-gradient-to-r  from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-1 px-2 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
               Go to my blogs <BsChevronRight className="h-5 w-5 ml-4" />
             </button>
           </Link>

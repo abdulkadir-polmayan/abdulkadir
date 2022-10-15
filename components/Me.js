@@ -41,9 +41,9 @@ const Me = () => {
             </button>
           </Link>
         </div>
-        <h1 className="text-5xl font-serif">Abdulkadir Şenel</h1>
+        <h1 className="text-7xl font-serif">Abdulkadir Şenel</h1>
 
-        <div className="mt-6 ">
+        <div className="mt-5 ">
           <div className="flex flex-col  md:flex-row md:items-end justify-start">
             <h2 className="text-2xl font-serif italic font-bold mr-3 ">
               I am junior

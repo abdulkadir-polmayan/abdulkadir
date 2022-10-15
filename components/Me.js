@@ -37,13 +37,21 @@ const Me = () => {
         <h1 className="text-7xl font-serif">Abdulkadir Şenel</h1>
 
         <div className="mt-10 ">
-          <h2 className="text-5xl font-serif italic font-bold flex-initial ">
-            I am junior
-          </h2>
-          <h3 className="text-2xl font-serif font-semibold underline mt-4">
-            Mobile App Developer
-          </h3>
-          <p className="leading-6 tracking-tight font-serif text-xl text-left py-2">
+          <div className="flex flex-col  md:flex-row md:items-end justify-start">
+            <h2 className="text-3xl font-serif italic font-bold mr-3 ">
+              I am junior
+            </h2>
+            <h3 className="text-2xl text-blue-500 font-serif font-semibold ">
+              Mobile App Developer
+            </h3>
+          </div>
+
+          <div className="leading-6 tracking-tight font-serif text-xl text-left py-2">
+            <div className="mb-2 italic">
+              {" "}
+              &quot; My point of view is <br></br> be nice, make it easy, do
+              simple things.&quot;
+            </div>
             I know how to use <br></br> {"  "}
             <a
               className="underline decoration-blue-500 font-medium"
@@ -82,12 +90,7 @@ const Me = () => {
               expo
             </a>{" "}
             <br></br>{" "}
-            <h4 className="mt-2 italic">
-              {" "}
-              &quot; My point of view is <br></br> be nice, make it easy, do simple
-              things.&quot;
-            </h4>
-          </p>
+          </div>
           <div className="flex items-center flex-col justify-center mt-[10%]  p-4 ">
             <button className="mt-4 text-3xl font-serif font-black flex">
               <Link href="/">These are my projects.</Link>

@@ -118,7 +118,7 @@ const Me = () => {
           </div>
           <div className="flex items-center flex-col justify-center mt-[10%]  p-4 ">
             <button className="mt-4 text-3xl font-serif font-black flex">
-              <Link href="/">These are my projects.</Link>
+              <Link href="/">My projects.</Link>
             </button>
             <div>
               <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">

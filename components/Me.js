@@ -3,6 +3,14 @@ import Link from "next/link";
 import Navbar from "./Navbar";
 import { BsChevronDown } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
+import {
+  AiFillLinkedin,
+  AiFillMail,
+  AiFillMessage,
+  AiFillTwitterSquare,
+} from "react-icons/ai";
+
+import Image from "next/image";
 
 import autoAnimate from "@formkit/auto-animate";
 
@@ -104,14 +112,22 @@ const Me = () => {
               onClick={() => {
                 setContact(!contact);
               }}
-              className="bg-gradient-to-r  from-slate-200 via-blue-100/50 to-transparent p-2 rounded text-center text-lg font-black  font-serif italic flex items-center select-none"
+              className="bg-gradient-to-r  from-slate-200 via-blue-100/50 to-transparent p-2 rounded text-center text-xl font-black  font-serif italic flex items-center select-none"
             >
               {" "}
               contact
             </button>{" "}
             {contact && (
-              <div className="ml-5 text-lg font-semibold  ">
-                0544 364 37 30{" "}
+              <div className="ml-4 text-lg font-semibold  flex">
+                <a href="https://www.linkedin.com/in/abdulkadir-senel/">
+                  <AiFillLinkedin className="h-8 w-8 ml-2 rounded" />
+                </a>
+                <a href="https://twitter.com/spaceofAbdul">
+                  <AiFillTwitterSquare className="h-8 w-8 ml-2 rounded" />
+                </a>
+                <a href="">
+                  <AiFillMail className="h-8 w-8 ml-2 rounded" />
+                </a>
               </div>
             )}{" "}
             <div className="ml-2"> &gt; </div>

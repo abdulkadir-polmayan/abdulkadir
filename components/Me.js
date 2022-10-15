@@ -38,10 +38,10 @@ const Me = () => {
 
         <div className="mt-10 ">
           <div className="flex flex-col  md:flex-row md:items-end justify-start">
-            <h2 className="text-3xl font-serif italic font-bold mr-3 ">
+            <h2 className="text-2xl font-serif italic font-bold mr-3 ">
               I am junior
             </h2>
-            <h3 className="text-2xl text-blue-500 font-serif font-semibold ">
+            <h3 className="text-4xl text-blue-500 font-serif font-semibold ">
               Mobile App Developer
             </h3>
           </div>

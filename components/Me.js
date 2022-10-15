@@ -41,7 +41,7 @@ const Me = () => {
             <h2 className="text-2xl font-serif italic font-bold mr-3 ">
               I am junior
             </h2>
-            <h3 className="text-4xl text-blue-500 font-serif font-semibold ">
+            <h3 className="text-4xl text-blue-500 font-sans font-bold ">
               Mobile App Developer
             </h3>
           </div>

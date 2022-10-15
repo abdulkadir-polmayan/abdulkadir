@@ -125,7 +125,7 @@ const Me = () => {
                 <a href="https://twitter.com/spaceofAbdul">
                   <AiFillTwitterSquare className="h-8 w-8 ml-2 rounded" />
                 </a>
-                <a href="mailto:abdulkadirsenel63@gmail.com">
+                <a href="mailto:abdulkadirsenel63@gmai.com">
                   <AiFillMail className="h-8 w-8 ml-2 rounded" />
                 </a>
               </div>

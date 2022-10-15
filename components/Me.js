@@ -10,8 +10,11 @@ const Me = () => {
   const [dev, setDev] = useState(false);
   const [elt, setElt] = useState(false);
 
+  const [contact, setContact] = useState(false);
+
   const parent = useRef(null);
   const parent2 = useRef(null);
+  const parent3 = useRef(null);
 
   useEffect(() => {
     parent.current && autoAnimate(parent.current);
@@ -19,6 +22,10 @@ const Me = () => {
   useEffect(() => {
     parent2.current && autoAnimate(parent2.current);
   }, [parent2]);
+
+  useEffect(() => {
+    parent3.current && autoAnimate(parent3.current);
+  }, [parent3]);
 
   return (
     <div className="max-w-2xl flex flex-col md:flex-row ">
@@ -90,6 +97,24 @@ const Me = () => {
               expo
             </a>{" "}
             <br></br>{" "}
+          </div>
+          <div ref={parent3} className="flex items-center mt-5">
+            {" "}
+            <button
+              onClick={() => {
+                setContact(!contact);
+              }}
+              className="bg-gradient-to-r  from-slate-200 via-blue-100/50 to-transparent p-2 rounded text-center text-lg font-black  font-serif italic flex items-center select-none"
+            >
+              {" "}
+              contact
+            </button>{" "}
+            {contact && (
+              <div className="ml-5 text-lg font-semibold  ">
+                0544 364 37 30{" "}
+              </div>
+            )}{" "}
+            <div className="ml-2"> &gt; </div>
           </div>
           <div className="flex items-center flex-col justify-center mt-[10%]  p-4 ">
             <button className="mt-4 text-3xl font-serif font-black flex">

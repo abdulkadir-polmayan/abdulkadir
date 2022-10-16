@@ -50,7 +50,6 @@ export default function Blogs({ post }) {
     <div className="overflow-hidden flex items-center flex-col bg-gradient-to-b from-indigo-200 via-blue-100/50 bg-white text-black ">
       <div className="flex flex-col md:flex-row p-4">
         <h1 className="text-9xl font-bold font-serif text-left ">Blogs</h1>
-        
       </div>
 
       <div className="mt-12 flex flex-col items-center justify-center  mx-1 max-w-xl  ">

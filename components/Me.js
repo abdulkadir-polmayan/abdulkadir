@@ -67,44 +67,13 @@ const Me = () => {
               &quot; My point of view is <br></br> be nice, make it easy, do
               simple things.&quot;
             </div>
-            I know how to use <br></br> {"  "}
-            <a
-              className="underline decoration-blue-500 font-medium"
-              href="https://www.instapaper.com/u"
-            >
-              react
-            </a>
-            {"-"}
-            {"  "}
-            <a
-              className="underline font-medium"
-              href="https://www.instapaper.com/u"
-            >
-              next.js
-            </a>
-            {"-"}
-            {"  "}
-            <a
-              className="underline decoration-orange-500 font-medium"
-              href="https://www.instapaper.com/u"
-            >
-              sanity
-            </a>{" "}
-            {"-"}
-            <a
-              className="underline decoration-indigo-500 font-medium"
-              href="https://www.instapaper.com/u"
-            >
-              tailwind
-            </a>{" "}
-            {"-"}
-            <a
-              className="underline font-medium"
-              href="https://www.instapaper.com/u"
-            >
-              expo
-            </a>{" "}
-            <br></br>{" "}
+            <div className="">
+              <p>I know how to use</p>
+              <p className="font-sans font-semibold text-lg">
+                React - Next.js - Sanity - Expo - Tailwind
+              </p>
+              {/* <p className="font-sans">React</p> */}
+            </div>
           </div>
           <div ref={parent3} className="flex items-center mt-5">
             {" "}

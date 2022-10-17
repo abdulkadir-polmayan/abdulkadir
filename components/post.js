@@ -30,14 +30,13 @@ const Blog = (props) => {
       <div className="article-face p-2 flex flex-row justify-between ">
         <div className={`flex ${blog ? null : null}  items-center`}>
           <img className="rounded shadow-lg" src={props.img} />
-          <div className="" ref={parent2}>
-            <h1 className="ml-4 p-2 text-2xl  font-semibold tracking-wide">
+          <div className="pl-4 " ref={parent2}>
+            <p className="text-black/60 ">{props.date}</p>
+            <h1 className=" my- text-2xl  font-semibold tracking-wide">
               {props.title}
             </h1>
             {blog ? null : (
-              <p className="pl-4 pr-1 text-black/70 font-serif">
-                {props.sentence}
-              </p>
+              <p className="pr-1 text-black/70 font-serif">{props.sentence}</p>
             )}
           </div>
         </div>

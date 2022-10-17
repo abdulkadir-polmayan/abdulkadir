@@ -101,11 +101,11 @@ const Me = () => {
             )}{" "}
             <div className="ml-2"> &gt; </div>
           </div>
-          <div className="flex items-center flex-col justify-center mt-[10%]  p-4 ">
-            <button className="mt-4 text-3xl font-serif font-black flex">
+          <div className=" items-center flex-col justify-center mt-[10%]  p-4 ">
+            <button className="mt-4 text-4xl font-serif font-black">
               <Link href="/">My projects.</Link>
             </button>
-            <div>
+            <div className="flex flex-col">
               <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
                 <img></img>
               </div>

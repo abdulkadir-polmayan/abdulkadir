@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 
 import autoAnimate from "@formkit/auto-animate";
+import Project from "./Project";
 
 const Me = () => {
   const [dev, setDev] = useState(false);
@@ -52,13 +53,13 @@ const Me = () => {
         <h1 className="text-7xl font-serif">Abdulkadir Şenel</h1>
 
         <div className="mt-5 ">
-          <div className="flex flex-col  md:flex-row md:items-end justify-start">
-            <h2 className="text-2xl font-serif italic font-bold mr-3 ">
+          <div className="flex flex-col  md:flex-row md:items-end">
+            <h2 className="text-2xl flex flex-col  md:flex-row font-serif italic font-bold  ">
               I am junior
+              <h3 className="text-3xl md:ml-3 text-blue-500 font-sans font-bold">
+                Mobile App Developer
+              </h3>
             </h2>
-            <h3 className="text-3xl text-blue-500 font-sans font-bold ">
-              Mobile App Developer
-            </h3>
           </div>
 
           <div className="leading-6 tracking-tight font-serif text-xl text-left py-2">
@@ -101,23 +102,14 @@ const Me = () => {
             )}{" "}
             <div className="ml-2"> &gt; </div>
           </div>
-          <div className=" items-center flex-col justify-center mt-[10%]  p-4 ">
-            <button className="mt-4 text-4xl font-serif font-black">
-              <Link href="/">My projects.</Link>
-            </button>
-            <div className="flex flex-col">
-              <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
-                <img></img>
-              </div>
-              <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
-                <img></img>
-              </div>{" "}
-              <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
-                <img></img>
-              </div>{" "}
-              <div className="w-40 h-40 m-5 md:mt-[120px] bg-black">
-                <img></img>
-              </div>
+          <div className=" items-center flex-col justify-center mt-[10%]   ">
+            <h3 className="p-4 mt-4 text-4xl font-serif font-black">
+              My projects.
+            </h3>
+            <div className="flex flex-col items-center overflow-hidden">
+              <Project />
+              <Project />
+              <Project />
             </div>
           </div>
           {/* <div

@@ -19,7 +19,7 @@ import autoAnimate from "@formkit/auto-animate";
 import Project from "./Project";
 
 const Me = () => {
-  const [dev, setDev] = useState(false);
+  const [skill, setSkill] = useState(false);
   const [elt, setElt] = useState(false);
 
   const [contact, setContact] = useState(false);
@@ -78,27 +78,54 @@ const Me = () => {
           </div>
         </div>
 
-        <div>
+        <div
+          ref={parent}
+          onClick={() => {
+            setSkill(!skill);
+          }}
+          className={`${skill ? "" : ""} my-8 select-none rounded-xl p-2`}
+        >
           <div>
             <h2>My skills</h2>
           </div>
-          <div>
-            <h3 className="flex items-center">
-              <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
-              solver)
-            </h3>
-            <ol className="list-decimal	list-inside">
-              <li className="flex items-center">
-                <DiReact className="h-10 w-10 mr-2 rounded" /> React(just tool)
-              </li>
-              <li className="flex items-center">
-                <DiReact className="h-10 w-10 mr-2 rounded" /> React(just tool)
-              </li>
-              <li className="flex items-center">
-                <DiReact className="h-10 w-10 mr-2 rounded" /> React(just tool)
-              </li>
-            </ol>
-          </div>
+          {skill ? (
+            <div>
+              <h3 className="flex items-center justify-center">
+                <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
+                solver)
+              </h3>
+              <div className="flex justify-between p-3">
+                <ol className="list-decimal	list-inside">
+                  <li className="flex items-center">
+                    <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
+                    tool)
+                  </li>
+                  <li className="flex items-center">
+                    <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
+                    tool)
+                  </li>
+                  <li className="flex items-center">
+                    <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
+                    tool)
+                  </li>
+                </ol>
+                <ol className="list-decimal	list-inside">
+                  <li className="flex items-center">
+                    <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
+                    tool)
+                  </li>
+                  <li className="flex items-center">
+                    <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
+                    tool)
+                  </li>
+                  <li className="flex items-center">
+                    <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
+                    tool)
+                  </li>
+                </ol>
+              </div>
+            </div>
+          ) : null}
         </div>
 
         <div ref={parent3} className="flex items-center mt-5">

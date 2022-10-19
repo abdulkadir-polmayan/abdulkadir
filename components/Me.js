@@ -53,6 +53,7 @@ const Me = () => {
           <h1 className="text-7xl font-serif">Abdulkadir Şenel</h1>
         </div>
 
+
         <div className="flex flex-col p-2 rounded-xl mt-10 bg-white md:items-start">
           <div className="text-2xl flex flex-col items-start md:flex-row   ">
             <h2 className="font-serif italic font-bold">I am junior</h2>

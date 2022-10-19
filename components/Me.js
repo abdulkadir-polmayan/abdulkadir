@@ -41,7 +41,7 @@ const Me = () => {
 
   return (
     <div className="max-w-2xl flex flex-col md:flex-row ">
-      <header ref={parent} className="p-2 transition">
+      <header className="p-2 transition">
         <div className="p-2 mb-5 flex justify-start">
           <Link href="/blogPosts">
             <button className="bg-gradient-to-r  from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-1 px-2 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
@@ -124,6 +124,25 @@ const Me = () => {
                   </li>
                 </ol>
               </div>
+            </div>
+          ) : null}
+        </div>
+        <div
+          ref={parent2}
+          onClick={() => {
+            setContact(!contact);
+          }}
+          className={`${skill ? "" : ""} my-8 select-none rounded-xl p-2`}
+        >
+          <div>
+            <h2>My skills</h2>
+          </div>
+          {contact ? (
+            <div>
+              <h3 className="flex items-center justify-center">
+                <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
+                solver)
+              </h3>
             </div>
           ) : null}
         </div>

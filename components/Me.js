@@ -8,12 +8,15 @@ import { SiExpo } from "react-icons/si";
 
 import {
   TbBrandFirebase,
+  TbBrandGithub,
   TbBrandGmail,
   TbBrandLinkedin,
   TbBrandNextjs,
+  TbBrandPagekit,
   TbBrandReactNative,
   TbBrandSvelte,
   TbBrandTailwind,
+  TbBrandTwitter,
 } from "react-icons/tb";
 
 import {
@@ -151,7 +154,7 @@ const Me = () => {
             </div>
           ) : null}
         </div>
-        
+
         {/*//! CONTACT */}
         <div
           ref={parent2}
@@ -163,7 +166,7 @@ const Me = () => {
             }}
           >
             <h2
-              className={` text-center text-4xl font-serif transition duration-300 font-black }`}
+              className={` text-center text-4xl font-sans transition duration-300 font-black }`}
             >
               Contact
             </h2>
@@ -174,22 +177,47 @@ const Me = () => {
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
               </h3> */}
-              <h3 className="flex items-center font-serif font-bold text-lg leading-5 tracking-tight">
-               You can rich via this links or methods
+              <h3 className=" items-center font-sans font-bold text-lg leading-6 tracking-tight">
+                You can rich via this links or methods. also my mail adress:{" "}
+                <a className="underline"> abdulkadirsenel63@gmail.com</a>
               </h3>
               <div className="  mt-7">
                 <ol className="list-decimal	list-inside grid ml-[10%] grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
-                  <li className="flex items-center font-semibold">
-                    <TbBrandReactNative className="h-8 w-8 mr-2 rounded" />{" "}
-                    React
-                  </li>
-                 
+                  <a
+                    href="https://www.linkedin.com/in/abdulkadir-senel/"
+                    target="_blank"
+                    className="flex items-center font-semibold"
+                  >
+                    <TbBrandLinkedin className="h-8 w-8 mr-2 rounded" />
+                    Linkedin
+                  </a>
+                  <a
+                    href="https://github.com/abdulkadir-polmayan"
+                    target="_blank"
+                    className="flex items-center font-semibold"
+                  >
+                    <TbBrandGithub className="h-8 w-8 mr-2 rounded" /> Github
+                  </a>
+                  <a
+                    href="https://twitter.com/spaceofAbdul"
+                    target="_blank"
+                    className="flex items-center font-semibold"
+                  >
+                    <TbBrandTwitter className="h-8 w-8 mr-2 rounded" /> Twitter
+                  </a>
+
+                  <a
+                    href="https://read.cv/abdulkadir"
+                    target="_blank"
+                    className="flex items-center font-semibold"
+                  >
+                    <TbBrandPagekit className="h-8 w-8 mr-2 rounded" /> read.cv
+                  </a>
                 </ol>
               </div>
             </div>
           ) : null}
         </div>
-      
 
         {/*//! PROJECTS */}
         <div

@@ -77,19 +77,17 @@ const Me = () => {
           </div>
           <div className="leading-6 tracking-tight font-serif text-xl text-left py-2">
             <div className="mb-2 ">
-              <p className="font-semibold">
+              <p className="">
                 {" "}
                 My passion is making wisely thing . Best thing is not always is
                 hardest thing. Solve problem wisely .{" "}
               </p>
-              <p className=" font-bold underline italic">
+              <p className=" font-bold  italic">
                 “Do not study hard , study smart.”
               </p>
               <div className="mt-3 flex flex-col md:flex-row">
-                <p className="font-bold">
-                  But there is more important thing is
-                </p>
-                <p className="md:ml-2 font-semibold italic underline">
+                <p className="">But there is more important thing is</p>
+                <p className="md:ml-2 font-semibold italic ">
                   “being nice for people.”
                 </p>
               </div>

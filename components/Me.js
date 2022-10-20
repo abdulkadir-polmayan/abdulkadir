@@ -8,6 +8,8 @@ import { SiExpo } from "react-icons/si";
 
 import {
   TbBrandFirebase,
+  TbBrandGmail,
+  TbBrandLinkedin,
   TbBrandNextjs,
   TbBrandReactNative,
   TbBrandSvelte,
@@ -28,7 +30,7 @@ import Project from "./Project";
 
 const Me = () => {
   const [skill, setSkill] = useState(false);
-  const [elt, setElt] = useState(false);
+  const [project, setProject] = useState(false);
 
   const [contact, setContact] = useState(false);
 
@@ -101,7 +103,7 @@ const Me = () => {
             skill ? "" : ""
           } my-8 select-none rounded-xl p-2 bg-white`}
         >
-          <div ref={parent4}>
+          <div>
             {skill ? (
               <h2
                 className={`p-4 text-4xl font-serif transition duration-300 font-black 
@@ -120,7 +122,7 @@ const Me = () => {
           </div>
           {skill ? (
             <div className="p-3">
-              <h3 className="flex items-center justify-center underline underline-offset-8 decoration-2  text-lg font-medium">
+              <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
               </h3>
@@ -154,7 +156,7 @@ const Me = () => {
         </div>
 
         {/*//! CONTACT */}
-        <div ref={parent3} className="flex items-center mt-5">
+        {/* <div ref={parent3} className="flex items-center mt-5">
           {" "}
           <button
             onClick={() => {
@@ -179,38 +181,73 @@ const Me = () => {
             </div>
           )}{" "}
           <div className="ml-2"> &gt; </div>
-        </div>
+        </div> */}
         {/*//? new  */}
         <div
           ref={parent2}
           onClick={() => {
             setContact(!contact);
           }}
-          className={`${skill ? "" : ""} my-8 select-none rounded-xl p-2`}
+          className={`${
+            skill ? "" : ""
+          } my-8 select-none rounded-xl p-2 bg-white`}
         >
           <div>
-            <h2>My skills</h2>
+            <h2
+              className={`p-4 text-4xl font-serif transition duration-300 font-black  text-center `}
+            >
+              Contact
+            </h2>
           </div>
           {contact ? (
             <div>
-              <h3 className="flex items-center justify-center">
-                <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
-                solver)
-              </h3>
+              <div className="  mt-5">
+                <ol className="list-decimal	list-inside grid grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
+                  <li className="flex items-center font-semibold">
+                    <TbBrandLinkedin className="h-8 w-8 mr-2 rounded" />{" "}
+                    Linkedin
+                  </li>
+                  <li className="flex items-center font-semibold">
+                    <TbBrandNextjs className="h-8 w-8 mr-2 rounded" /> Next
+                  </li>
+                  <li className="flex items-center font-semibold">
+                    <TbBrandGmail className="h-8 w-8 mr-2 rounded" /> Sanity
+                  </li>
+                  <li className="flex items-center font-semibold">
+                    <TbBrandFirebase className="h-8 w-8 mr-2 rounded" />{" "}
+                    Firebase
+                  </li>
+                  <li className="flex items-center font-semibold">
+                    <SiExpo className="h-6 w-8 mr-2 rounded" /> Expo
+                  </li>
+                  <li className="flex items-center font-semibold">
+                    <TbBrandTailwind className="h-8 w-8 mr-2 rounded" />
+                    Tailwind
+                  </li>
+                </ol>
+              </div>
             </div>
           ) : null}
         </div>
 
         {/*//! PROJECTS */}
-        <div className=" items-center flex-col justify-center mt-[10%]   ">
-          <h3 className="p-4 mt-4 text-4xl font-serif font-black">
+        <div
+          ref={parent4}
+          onClick={() => {
+            setProject(!project);
+          }}
+          className=" items-center flex-col justify-center mt-[10%] bg-white rounded-lg  "
+        >
+          <h3 className="p-4 mt-4 text-center text-4xl font-serif font-black">
             My projects.
           </h3>
-          <div className="flex flex-col items-center overflow-hidden">
-            <Project />
-            <Project />
-            <Project />
-          </div>
+          {project ? (
+            <div className="flex flex-col items-center overflow-hidden">
+              <Project />
+              <Project />
+              <Project />
+            </div>
+          ) : null}
         </div>
       </header>
     </div>

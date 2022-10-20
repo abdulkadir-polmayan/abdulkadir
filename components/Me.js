@@ -4,9 +4,15 @@ import Navbar from "./Navbar";
 import { BsChevronDown } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
 import { BiBrain } from "react-icons/bi";
-import { DiReact } from "react-icons/di";
+import { SiExpo } from "react-icons/si";
 
-import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
+import {
+  TbBrandFirebase,
+  TbBrandNextjs,
+  TbBrandReactNative,
+  TbBrandSvelte,
+  TbBrandTailwind,
+} from "react-icons/tb";
 
 import {
   AiFillLinkedin,
@@ -119,30 +125,27 @@ const Me = () => {
                 solver)
               </h3>
               <div className="flex justify-between  mt-5">
-                <ol className="list-decimal	list-inside grid grid-rows-3 gap-x-9 grid-flow-col gap-4 ">
+                <ol className="list-decimal	list-inside grid grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
                   <li className="flex items-center font-semibold">
                     <TbBrandReactNative className="h-8 w-8 mr-2 rounded" />{" "}
-                    React(just tool)
+                    React
                   </li>
                   <li className="flex items-center font-semibold">
-                    <TbBrandNextjs className="h-8 w-8 mr-2 rounded" /> Next(just
-                    tool)
+                    <TbBrandNextjs className="h-8 w-8 mr-2 rounded" /> Next
                   </li>
-                  <li className="flex items-center">
-                    <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
-                    tool)
+                  <li className="flex items-center font-semibold">
+                    <TbBrandSvelte className="h-8 w-8 mr-2 rounded" /> Sanity
                   </li>
-                  <li className="flex items-center">
-                    <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
-                    tool)
+                  <li className="flex items-center font-semibold">
+                    <TbBrandFirebase className="h-8 w-8 mr-2 rounded" />{" "}
+                    Firebase
                   </li>
-                  <li className="flex items-center">
-                    <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
-                    tool)
+                  <li className="flex items-center font-semibold">
+                    <SiExpo className="h-6 w-8 mr-2 rounded" /> Expo
                   </li>
-                  <li className="flex items-center">
-                    <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
-                    tool)
+                  <li className="flex items-center font-semibold">
+                    <TbBrandTailwind className="h-8 w-8 mr-2 rounded" />
+                    Tailwind
                   </li>
                 </ol>
               </div>

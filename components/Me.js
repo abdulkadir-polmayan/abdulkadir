@@ -114,7 +114,7 @@ const Me = () => {
             </h2>
           </div>
           {skill ? (
-            <div className="p-3">
+            <div className="p-3 mt-3">
               {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
@@ -123,8 +123,8 @@ const Me = () => {
                 I know how to use this tools in order to solve problem or create
                 app.
               </h3>
-              <div className="  mt-5">
-                <ol className="list-decimal	list-inside grid grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
+              <div className="  mt-7">
+                <ol className="list-decimal	list-inside grid ml-[10%] grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
                   <li className="flex items-center font-semibold">
                     <TbBrandReactNative className="h-8 w-8 mr-2 rounded" />{" "}
                     React
@@ -151,40 +151,11 @@ const Me = () => {
             </div>
           ) : null}
         </div>
-
+        
         {/*//! CONTACT */}
-        {/* <div ref={parent3} className="flex items-center mt-5">
-          {" "}
-          <button
-            onClick={() => {
-              setContact(!contact);
-            }}
-            className="bg-gradient-to-r  from-slate-200 via-blue-100/50 to-transparent p-2 rounded text-center text-xl font-black  font-serif italic flex items-center select-none"
-          >
-            {" "}
-            contact
-          </button>{" "}
-          {contact && (
-            <div className="ml-4 text-lg font-semibold  flex">
-              <a href="https://www.linkedin.com/in/abdulkadir-senel/">
-                <AiFillLinkedin className="h-8 w-8 ml-2 rounded" />
-              </a>
-              <a href="https://twitter.com/spaceofAbdul">
-                <AiFillTwitterSquare className="h-8 w-8 ml-2 rounded" />
-              </a>
-              <a href="mailto:abdulkadirsenel63@gmai.com">
-                <AiFillMail className="h-8 w-8 ml-2 rounded" />
-              </a>
-            </div>
-          )}{" "}
-          <div className="ml-2"> &gt; </div>
-        </div> */}
-        {/*//? new  */}
         <div
           ref={parent2}
-          className={`${
-            skill ? "" : ""
-          } my-8 select-none rounded-xl py-8 bg-white`}
+          className={` my-8 select-none rounded-xl py-8 bg-white`}
         >
           <div
             onClick={() => {
@@ -192,41 +163,33 @@ const Me = () => {
             }}
           >
             <h2
-              className={` text-4xl font-serif transition duration-300 font-black  text-center `}
+              className={` text-center text-4xl font-serif transition duration-300 font-black }`}
             >
               Contact
             </h2>
           </div>
           {contact ? (
-            <div>
-              <div className="  mt-5">
-                <ol className="list-decimal	list-inside grid grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
+            <div className="p-3 mt-3">
+              {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
+                <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
+                solver)
+              </h3> */}
+              <h3 className="flex items-center font-serif font-bold text-lg leading-5 tracking-tight">
+               You can rich via this links or methods
+              </h3>
+              <div className="  mt-7">
+                <ol className="list-decimal	list-inside grid ml-[10%] grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
                   <li className="flex items-center font-semibold">
-                    <TbBrandLinkedin className="h-8 w-8 mr-2 rounded" />{" "}
-                    Linkedin
+                    <TbBrandReactNative className="h-8 w-8 mr-2 rounded" />{" "}
+                    React
                   </li>
-                  <li className="flex items-center font-semibold">
-                    <TbBrandNextjs className="h-8 w-8 mr-2 rounded" /> Next
-                  </li>
-                  <li className="flex items-center font-semibold">
-                    <TbBrandGmail className="h-8 w-8 mr-2 rounded" /> Sanity
-                  </li>
-                  <li className="flex items-center font-semibold">
-                    <TbBrandFirebase className="h-8 w-8 mr-2 rounded" />{" "}
-                    Firebase
-                  </li>
-                  <li className="flex items-center font-semibold">
-                    <SiExpo className="h-6 w-8 mr-2 rounded" /> Expo
-                  </li>
-                  <li className="flex items-center font-semibold">
-                    <TbBrandTailwind className="h-8 w-8 mr-2 rounded" />
-                    Tailwind
-                  </li>
+                 
                 </ol>
               </div>
             </div>
           ) : null}
         </div>
+      
 
         {/*//! PROJECTS */}
         <div

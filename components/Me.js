@@ -27,6 +27,7 @@ const Me = () => {
   const parent = useRef(null);
   const parent2 = useRef(null);
   const parent3 = useRef(null);
+  const parent4 = useRef(null);
 
   useEffect(() => {
     parent.current && autoAnimate(parent.current);
@@ -38,6 +39,9 @@ const Me = () => {
   useEffect(() => {
     parent3.current && autoAnimate(parent3.current);
   }, [parent3]);
+  useEffect(() => {
+    parent4.current && autoAnimate(parent4.current);
+  }, [parent4]);
 
   return (
     <div className="max-w-2xl flex flex-col md:flex-row ">
@@ -53,7 +57,7 @@ const Me = () => {
           <h1 className="text-7xl font-serif">Abdulkadir Şenel</h1>
         </div>
 
-
+        {/*//! ABOUT */}
         <div className="flex flex-col p-2 rounded-xl mt-10 bg-white md:items-start">
           <div className="text-2xl flex flex-col items-start md:flex-row   ">
             <h2 className="font-serif italic font-bold">I am junior</h2>
@@ -79,25 +83,42 @@ const Me = () => {
           </div>
         </div>
 
+        {/*//! SKİLLS */}
         <div
           ref={parent}
           onClick={() => {
             setSkill(!skill);
           }}
-          className={`${skill ? "" : ""} my-8 select-none rounded-xl p-2`}
+          className={`${
+            skill ? "" : ""
+          } my-8 select-none rounded-xl p-2 bg-white`}
         >
-          <div>
-            <h2>My skills</h2>
+          <div ref={parent4}>
+            {skill ? (
+              <h2
+                className={`p-4 text-4xl font-serif transition duration-300 font-black 
+               
+              }`}
+              >
+                My skills
+              </h2>
+            ) : (
+              <h2
+                className={`p-4 text-4xl font-serif transition duration-300 font-black  text-center `}
+              >
+                My skills
+              </h2>
+            )}
           </div>
           {skill ? (
-            <div>
-              <h3 className="flex items-center justify-center">
+            <div className="p-3">
+              <h3 className="flex items-center justify-center underline underline-offset-8 decoration-2  text-lg font-medium">
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
               </h3>
-              <div className="flex justify-between p-3">
-                <ol className="list-decimal	list-inside">
-                  <li className="flex items-center">
+              <div className="flex justify-between p-3 mt-5">
+                <ol className="list-decimal	list-inside grid grid-rows-3 gap-x-9 justify-between grid-flow-col gap-4  ">
+                  <li className="flex items-center font-">
                     <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
                     tool)
                   </li>
@@ -109,9 +130,7 @@ const Me = () => {
                     <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
                     tool)
                   </li>
-                </ol>
-                <ol className="list-decimal	list-inside">
-                  <li className="flex items-center">
+                <li className="flex items-center">
                     <DiReact className="h-10 w-10 mr-2 rounded" /> React(just
                     tool)
                   </li>
@@ -128,26 +147,8 @@ const Me = () => {
             </div>
           ) : null}
         </div>
-        <div
-          ref={parent2}
-          onClick={() => {
-            setContact(!contact);
-          }}
-          className={`${skill ? "" : ""} my-8 select-none rounded-xl p-2`}
-        >
-          <div>
-            <h2>My skills</h2>
-          </div>
-          {contact ? (
-            <div>
-              <h3 className="flex items-center justify-center">
-                <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
-                solver)
-              </h3>
-            </div>
-          ) : null}
-        </div>
 
+        {/*//! CONTACT */}
         <div ref={parent3} className="flex items-center mt-5">
           {" "}
           <button
@@ -174,6 +175,28 @@ const Me = () => {
           )}{" "}
           <div className="ml-2"> &gt; </div>
         </div>
+        {/*//? new  */}
+        <div
+          ref={parent2}
+          onClick={() => {
+            setContact(!contact);
+          }}
+          className={`${skill ? "" : ""} my-8 select-none rounded-xl p-2`}
+        >
+          <div>
+            <h2>My skills</h2>
+          </div>
+          {contact ? (
+            <div>
+              <h3 className="flex items-center justify-center">
+                <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
+                solver)
+              </h3>
+            </div>
+          ) : null}
+        </div>
+
+        {/*//! PROJECTS */}
         <div className=" items-center flex-col justify-center mt-[10%]   ">
           <h3 className="p-4 mt-4 text-4xl font-serif font-black">
             My projects.

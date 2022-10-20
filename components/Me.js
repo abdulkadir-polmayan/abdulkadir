@@ -96,35 +96,30 @@ const Me = () => {
         {/*//! SKİLLS */}
         <div
           ref={parent}
-          onClick={() => {
-            setSkill(!skill);
-          }}
           className={`${
             skill ? "" : ""
           } my-8 select-none rounded-xl p-2 bg-white`}
         >
-          <div>
-            {skill ? (
-              <h2
-                className={`p-4 text-4xl font-serif transition duration-300 font-black 
-               
-              }`}
-              >
-                My skills
-              </h2>
-            ) : (
-              <h2
-                className={`p-4 text-4xl font-serif transition duration-300 font-black  text-center `}
-              >
-                My skills
-              </h2>
-            )}
+          <div
+            onClick={() => {
+              setSkill(!skill);
+            }}
+          >
+            <h2
+              className={`p-4 text-4xl font-serif transition duration-300 font-black }`}
+            >
+              My skills
+            </h2>
           </div>
           {skill ? (
             <div className="p-3">
-              <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
+              {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
+              </h3> */}
+              <h3 className="flex items-center font-serif font-bold text-lg leading-5 tracking-tight">
+                I know how to use this tools in order to solve problem or create
+                app.
               </h3>
               <div className="  mt-5">
                 <ol className="list-decimal	list-inside grid grid-rows-3 gap-x-9 grid-flow-col gap-2 ">

@@ -118,15 +118,15 @@ const Me = () => {
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
               </h3>
-              <div className="flex justify-between p-3 mt-5">
-                <ol className="list-decimal	list-inside grid grid-rows-3 gap-x-9 justify-between grid-flow-col gap-4  ">
+              <div className="flex justify-between  mt-5">
+                <ol className="list-decimal	list-inside grid grid-rows-3 gap-x-9 grid-flow-col gap-4 ">
                   <li className="flex items-center font-semibold">
                     <TbBrandReactNative className="h-8 w-8 mr-2 rounded" />{" "}
                     React(just tool)
                   </li>
                   <li className="flex items-center font-semibold">
-                    <TbBrandNextjs className="h-8 w-8 mr-2 rounded" />{" "}
-                    Next(just tool)
+                    <TbBrandNextjs className="h-8 w-8 mr-2 rounded" /> Next(just
+                    tool)
                   </li>
                   <li className="flex items-center">
                     <DiReact className="h-10 w-10 mr-2 rounded" /> React(just

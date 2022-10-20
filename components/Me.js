@@ -186,6 +186,7 @@ const Me = () => {
                   <a
                     href="https://www.linkedin.com/in/abdulkadir-senel/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center font-semibold"
                   >
                     <TbBrandLinkedin className="h-8 w-8 mr-2 rounded" />
@@ -194,6 +195,7 @@ const Me = () => {
                   <a
                     href="https://github.com/abdulkadir-polmayan"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center font-semibold"
                   >
                     <TbBrandGithub className="h-8 w-8 mr-2 rounded" /> Github
@@ -201,6 +203,7 @@ const Me = () => {
                   <a
                     href="https://twitter.com/spaceofAbdul"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center font-semibold"
                   >
                     <TbBrandTwitter className="h-8 w-8 mr-2 rounded" /> Twitter
@@ -209,6 +212,7 @@ const Me = () => {
                   <a
                     href="https://read.cv/abdulkadir"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center font-semibold"
                   >
                     <TbBrandPagekit className="h-8 w-8 mr-2 rounded" /> read.cv

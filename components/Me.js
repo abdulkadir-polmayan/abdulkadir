@@ -83,7 +83,7 @@ const Me = () => {
                 hardest thing. Solve problem wisely .{" "}
               </p>
               <p className=" font-bold underline italic">
-                "Do not study hard , study smart."
+                “Do not study hard , study smart.”
               </p>
               <div className="mt-3 flex flex-col md:flex-row">
                 <p className="font-bold">

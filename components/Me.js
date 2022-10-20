@@ -124,7 +124,7 @@ const Me = () => {
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
               </h3>
-              <div className="flex justify-between  mt-5">
+              <div className="  mt-5">
                 <ol className="list-decimal	list-inside grid grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
                   <li className="flex items-center font-semibold">
                     <TbBrandReactNative className="h-8 w-8 mr-2 rounded" />{" "}

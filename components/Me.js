@@ -54,7 +54,7 @@ const Me = () => {
   }, [parent4]);
 
   return (
-    <div className="max-w-2xl flex flex-col md:flex-row ">
+    <div className="max-w-xl flex flex-col md:flex-row ">
       <header className="p-2 transition">
         <div className="p-2 mb-5 flex justify-start">
           <Link href="/blogPosts">
@@ -69,13 +69,13 @@ const Me = () => {
 
         {/*//! ABOUT */}
         <div className="flex flex-col p-3 rounded-xl mt-10 bg-white md:items-start">
-          <div className="text-2xl flex flex-col items-start md:flex-row   ">
+          <div className="text-2xl flex flex-col items-start   ">
             <h2 className="font-serif italic font-bold">I am junior</h2>
-            <h3 className="text-3xl md:ml-3 text-blue-500 font-sans font-bold">
+            <h3 className="text-3xl text-blue-500 font-sans font-bold">
               Mobile App Developer
             </h3>
           </div>
-          <div className="leading-6 tracking-tight font-serif text-xl text-left py-2">
+          <div className=" leading-6 tracking-tight font-serif text-xl text-left py-2">
             <div className="mb-2 ">
               <p className="">
                 {" "}
@@ -85,7 +85,7 @@ const Me = () => {
               <p className=" font-bold  italic">
                 “Do not study hard , study smart.”
               </p>
-              <div className="mt-3 flex flex-col md:flex-row">
+              <div className="mt-3 flex flex-col ">
                 <p className="">But there is more important thing is</p>
                 <p className="md:ml-2 font-semibold italic ">
                   “being nice for people.”
@@ -100,7 +100,7 @@ const Me = () => {
           ref={parent}
           className={`${
             skill ? "" : ""
-          } my-8 select-none rounded-xl p-2 bg-white`}
+          } my-8 select-none rounded-xl py-8 bg-white`}
         >
           <div
             onClick={() => {
@@ -108,7 +108,7 @@ const Me = () => {
             }}
           >
             <h2
-              className={`p-4 text-4xl font-serif transition duration-300 font-black }`}
+              className={` text-center text-4xl font-serif transition duration-300 font-black }`}
             >
               My skills
             </h2>
@@ -182,16 +182,17 @@ const Me = () => {
         {/*//? new  */}
         <div
           ref={parent2}
-          onClick={() => {
-            setContact(!contact);
-          }}
           className={`${
             skill ? "" : ""
-          } my-8 select-none rounded-xl p-2 bg-white`}
+          } my-8 select-none rounded-xl py-8 bg-white`}
         >
-          <div>
+          <div
+            onClick={() => {
+              setContact(!contact);
+            }}
+          >
             <h2
-              className={`p-4 text-4xl font-serif transition duration-300 font-black  text-center `}
+              className={` text-4xl font-serif transition duration-300 font-black  text-center `}
             >
               Contact
             </h2>
@@ -230,12 +231,14 @@ const Me = () => {
         {/*//! PROJECTS */}
         <div
           ref={parent4}
-          onClick={() => {
-            setProject(!project);
-          }}
-          className=" items-center flex-col justify-center mt-[10%] bg-white rounded-lg  "
+          className=" items-center flex-col justify-center py-8 my-[10%] bg-white rounded-lg  "
         >
-          <h3 className="p-4 mt-4 text-center text-4xl font-serif font-black">
+          <h3
+            onClick={() => {
+              setProject(!project);
+            }}
+            className="p- mt- text-center text-4xl font-serif font-black"
+          >
             My projects.
           </h3>
           {project ? (

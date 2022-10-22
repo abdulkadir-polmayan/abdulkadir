@@ -50,7 +50,6 @@ const Me = () => {
     parent4.current && autoAnimate(parent4.current);
   }, [parent4]);
 
-  
   const [skill, setSkill] = useState(false);
   const [project, setProject] = useState(false);
   const [contact, setContact] = useState(false);
@@ -108,12 +107,16 @@ const Me = () => {
         <div
           ref={parent}
           className={`${
-            project || contact ? "blur-sm" : ""
+            project || contact ? "blur-sm " : ""
           } my-8 select-none rounded-xl py-8 bg-white`}
         >
           <div
             onClick={() => {
-              setSkill(!skill);
+              if (project || contact) {
+                setSkill(false);
+              } else {
+                setSkill(!skill);
+              }
             }}
           >
             <h2
@@ -158,7 +161,7 @@ const Me = () => {
                 </ol>
               </div>
             </div>
-          ) }
+          )}
         </div>
 
         {/*//! CONTACT */}
@@ -170,7 +173,11 @@ const Me = () => {
         >
           <div
             onClick={() => {
-              setContact(!contact);
+              if (project || skill) {
+                setContact(false);
+              } else {
+                setContact(!contact);
+              }
             }}
           >
             <h2
@@ -241,8 +248,11 @@ const Me = () => {
         >
           <div
             onClick={() => {
-              setProject(!project);
-              setSkill(false);
+              if (contact || skill) {
+                setProject(false);
+              } else {
+                setProject(!project);
+              }
             }}
             className=" py-8"
           >

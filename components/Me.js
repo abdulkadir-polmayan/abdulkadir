@@ -5,7 +5,7 @@ import { BsChevronDown } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
 import { BiBrain } from "react-icons/bi";
 import { SiExpo } from "react-icons/si";
-
+import blogLogo from "../images/blog-logo.png";
 import {
   TbBrandFirebase,
   TbBrandGithub,
@@ -265,10 +265,14 @@ const Me = () => {
               {/* //! project */}
               <div className="flex flex-col shadow-lg w-[340px] m-1 max-w-sm  rounded my-10 bg-white ">
                 <div className="flex justify-center p-5">
-                  <div className="w-40 h-40 bg-red-600/40 rounded"></div>
+                  <div className="w-40 h-40 bg-gradient-to-b shadow-md from-white  to-yellow-100 rounded flex justify-center items-center pb-2">
+                    <p className="font-serif text-9xl text-center font-black ">
+                      A
+                    </p>
+                  </div>
                 </div>
                 <div className="text-center">
-                  <h4 className=" font-black text-3xl mb-2">Note</h4>
+                  <h4 className=" font-black text-3xl mb-2">Single page Blog</h4>
                   <p className="px-6  tracking-tight leading-5 text-md text-black/70 text-left">
                     help people to remember the ideas of what they live for and
                     the importa of life

@@ -245,15 +245,24 @@ const Me = () => {
                 </div>
                 <div className="text-center">
                   <h4 className=" font-black text-3xl mb-2">Note</h4>
-                  <p className="px-6 font-serif tracking-tight leading-5 text-md text-black/70 text-left">
+                  <p className="px-6  tracking-tight leading-5 text-md text-black/70 text-left">
                     help people to remember the ideas of what they live for and
                     the importa of life
                   </p>
-                  <p>
-                    go to project : <a href="">Single Page Blog</a>{" "}
+                  <p className="px-6 mt-2 font-semibold leading-5 text-black/90 text-left">
+                    go to project :{" "}
+                    <a className="font-medium text-black/75 " href="">
+                     www
+                    </a>{" "}
+                  </p>
+                  <p className="px-6 mt-2 font-semibold leading-5 text-black/90 text-left">
+                    Github :{" "}
+                    <a className="font-medium text-black/75 " href="">
+                      www
+                    </a>{" "}
                   </p>
                   <p className=" mx-6 my-4 font-black  text-black/70 text-left">
-                    2019
+                    2022
                   </p>
                 </div>
               </div>

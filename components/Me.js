@@ -223,22 +223,23 @@ const Me = () => {
         {/*//! PROJECTS */}
         <div
           ref={parent4}
-          className=" items-center flex-col justify-center py-8 my-[10%] bg-slate-50
+          className=" items-center flex-col justify-center  my-[10%] bg-slate-50
            rounded-lg  "
         >
-          <div className="">
-            <h3
-              onClick={() => {
-                setProject(!project);
-              }}
-              className="p- mt- text-center text-4xl font-serif font-black"
-            >
+          <div
+            onClick={() => {
+              setProject(!project);
+            }}
+            className=" py-8"
+          >
+            <h3 className="p- mt- text-center text-4xl font-serif font-black">
               My projects.
             </h3>
           </div>
           {project ? (
             <div className="flex flex-col items-center overflow-hidden ">
-              <div className="flex flex-col shadow-lg  backdrop-blur-sm bg-white/50 m-1 max-w-sm  rounded my-10  ">
+              {/* //! project */}
+              <div className="flex flex-col shadow-lg  m-1 max-w-sm  rounded my-10 bg-white ">
                 <div className="flex justify-center p-5">
                   <div className="w-40 h-40 bg-red-600/40 rounded"></div>
                 </div>
@@ -254,9 +255,6 @@ const Me = () => {
                   </p>
                 </div>
               </div>
-              <Project />
-              <Project />
-              <Project />
             </div>
           ) : null}
         </div>

@@ -50,6 +50,7 @@ const Me = () => {
     parent4.current && autoAnimate(parent4.current);
   }, [parent4]);
 
+  
   const [skill, setSkill] = useState(false);
   const [project, setProject] = useState(false);
   const [contact, setContact] = useState(false);
@@ -121,7 +122,7 @@ const Me = () => {
               My skills
             </h2>
           </div>
-          {skill ? (
+          {skill && (
             <div className="p-3 mt-3">
               {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
@@ -157,7 +158,7 @@ const Me = () => {
                 </ol>
               </div>
             </div>
-          ) : null}
+          ) }
         </div>
 
         {/*//! CONTACT */}
@@ -241,6 +242,7 @@ const Me = () => {
           <div
             onClick={() => {
               setProject(!project);
+              setSkill(false);
             }}
             className=" py-8"
           >

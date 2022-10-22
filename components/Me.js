@@ -156,17 +156,14 @@ const Me = () => {
         </div>
 
         {/*//! CONTACT */}
-        <div
-          ref={parent2}
-          className={` my-8 select-none rounded-xl py-8 bg-white`}
-        >
+        <div ref={parent2} className={` my-8  rounded-xl py-8 bg-white`}>
           <div
             onClick={() => {
               setContact(!contact);
             }}
           >
             <h2
-              className={` text-center text-4xl font-sans transition duration-300 font-black }`}
+              className={`select-none text-center text-4xl font-sans transition duration-300 font-black }`}
             >
               Contact
             </h2>
@@ -181,7 +178,7 @@ const Me = () => {
                 You can rich via this links or methods. also my mail adress:{" "}
                 <a className="underline"> abdulkadirsenel63@gmail.com</a>
               </h3>
-              <div className="  mt-7">
+              <div className=" select-non mt-7">
                 <ol className="list-decimal	list-inside grid ml-[10%] grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
                   <a
                     href="https://www.linkedin.com/in/abdulkadir-senel/"
@@ -226,18 +223,37 @@ const Me = () => {
         {/*//! PROJECTS */}
         <div
           ref={parent4}
-          className=" items-center flex-col justify-center py-8 my-[10%] bg-white rounded-lg  "
+          className=" items-center flex-col justify-center py-8 my-[10%] bg-slate-50
+           rounded-lg  "
         >
-          <h3
-            onClick={() => {
-              setProject(!project);
-            }}
-            className="p- mt- text-center text-4xl font-serif font-black"
-          >
-            My projects.
-          </h3>
+          <div className="">
+            <h3
+              onClick={() => {
+                setProject(!project);
+              }}
+              className="p- mt- text-center text-4xl font-serif font-black"
+            >
+              My projects.
+            </h3>
+          </div>
           {project ? (
-            <div className="flex flex-col items-center overflow-hidden">
+            <div className="flex flex-col items-center overflow-hidden ">
+              <div className="flex flex-col shadow-lg  backdrop-blur-sm bg-white/50 m-1 max-w-sm  rounded my-10  ">
+                <div className="flex justify-center p-5">
+                  <div className="w-40 h-40 bg-red-600/40 rounded"></div>
+                </div>
+                <div className="text-center">
+                  <h4 className=" font-black text-3xl mb-2">Note</h4>
+                  <p className="mx-6 font-serif tracking-tight leading-5 text-md text-black/70 text-left">
+                    help people to remember the ideas of what they live for and
+                    the importa of life
+                  </p>
+                  <p>Project</p>
+                  <p className=" m-6 font-black  text-black/70 text-left">
+                    2019
+                  </p>
+                </div>
+              </div>
               <Project />
               <Project />
               <Project />

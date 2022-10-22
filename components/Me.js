@@ -260,9 +260,9 @@ const Me = () => {
               My projects.
             </h3>
           </div>
-          {project ? (
+          {project && (
             <div className="flex flex-col items-center  overflow-hidden ">
-              {/* //! project */}
+              {/* project */}
               <div className="flex flex-col shadow-lg w-[340px] m-1 max-w-sm  rounded my-10 bg-white ">
                 <div className="flex justify-center p-5">
                   <div className="w-40 h-40 shadow-md bg-gradient-to-b from-white  to-yellow-100 rounded flex justify-center items-center pb-2">
@@ -302,8 +302,50 @@ const Me = () => {
                   </p>
                 </div>
               </div>
+              <div className="flex flex-col shadow-lg w-[340px] m-1 max-w-sm  rounded my-10 bg-white ">
+                <div className="flex justify-center p-5">
+                  <div className="w-40 h-40 shadow-md bg-gradient-to-t from-black  to-indigo-900 rounded flex justify-center items-center pb-2">
+                    <p className="font-sans tracking-tighter font-medium text-white text-9xl text-center ">
+                      M
+                    </p>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h4 className=" font-black text-3xl mb-2">Motivation</h4>
+                  <p className="px-6  tracking-tight leading-5 text-md text-black/70 text-left">
+                    help people to inspire themself with their own imagination
+                  </p>
+                  <p className="px-6 mt-2 font-semibold leading-5 text-black/90 text-left">
+                    go to project :{" "}
+                    <a
+                      className="font-medium text-black/75 "
+                      href="https://motivational-saids.vercel.app/"
+                    >
+                      motivational-saids
+                    </a>{" "}
+                  </p>
+                  <p className="px-6 mt-2 font-semibold leading-5 text-black/90 text-left">
+                    Github :{" "}
+                    <a
+                      className="font-medium text-black/75 "
+                      href="https://github.com/abdulkadir-polmayan/motivational-saids"
+                    >
+                      github.motivational-saids
+                    </a>{" "}
+                  </p>
+                  <p className="px-6  mt-2 font-semibold leading-5 text-black/90 text-left">
+                    How I did :{" "}
+                    <a className="font-medium text-black/75 " href="">
+                      www
+                    </a>{" "}
+                  </p>
+                  <p className=" mx-6 my-4 font-black  text-black/70 text-left">
+                    2022
+                  </p>
+                </div>
+              </div>
             </div>
-          ) : null}
+          )}
         </div>
       </header>
     </div>

@@ -265,14 +265,16 @@ const Me = () => {
               {/* //! project */}
               <div className="flex flex-col shadow-lg w-[340px] m-1 max-w-sm  rounded my-10 bg-white ">
                 <div className="flex justify-center p-5">
-                  <div className="w-40 h-40 bg-gradient-to-b shadow-md from-white  to-yellow-100 rounded flex justify-center items-center pb-2">
+                  <div className="w-40 h-40 shadow-md bg-gradient-to-b from-white  to-yellow-100 rounded flex justify-center items-center pb-2">
                     <p className="font-serif text-9xl text-center font-black ">
                       A
                     </p>
                   </div>
                 </div>
                 <div className="text-center">
-                  <h4 className=" font-black text-3xl mb-2">Single page Blog</h4>
+                  <h4 className=" font-black text-3xl mb-2">
+                    Single page Blog
+                  </h4>
                   <p className="px-6  tracking-tight leading-5 text-md text-black/70 text-left">
                     help people to remember the ideas of what they live for and
                     the importa of life
@@ -285,6 +287,12 @@ const Me = () => {
                   </p>
                   <p className="px-6 mt-2 font-semibold leading-5 text-black/90 text-left">
                     Github :{" "}
+                    <a className="font-medium text-black/75 " href="">
+                      www
+                    </a>{" "}
+                  </p>
+                  <p className="px-6  mt-2 font-semibold leading-5 text-black/90 text-left">
+                    How I did :{" "}
                     <a className="font-medium text-black/75 " href="">
                       www
                     </a>{" "}

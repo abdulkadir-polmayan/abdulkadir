@@ -223,7 +223,7 @@ const Me = () => {
         {/*//! PROJECTS */}
         <div
           ref={parent4}
-          className=" items-center flex-col justify-center -mx-2 my-[10%] bg-slate-100
+          className=" items-center flex-col justify-center -mx-2 px-[50xp] my-[10%] bg-slate-100
            rounded-lg  "
         >
           <div
@@ -239,7 +239,7 @@ const Me = () => {
           {project ? (
             <div className="flex flex-col items-center  overflow-hidden ">
               {/* //! project */}
-              <div className="flex flex-col shadow-lg w-[] m-1 max-w-sm  rounded my-10 bg-white ">
+              <div className="flex flex-col shadow-lg w-[340px] m-1 max-w-sm  rounded my-10 bg-white ">
                 <div className="flex justify-center p-5">
                   <div className="w-40 h-40 bg-red-600/40 rounded"></div>
                 </div>
@@ -252,7 +252,7 @@ const Me = () => {
                   <p>
                     go to project : <a href="">Single Page Blog</a>{" "}
                   </p>
-                  <p className=" m-6 font-black  text-black/70 text-left">
+                  <p className=" mx-6 my-4 font-black  text-black/70 text-left">
                     2019
                   </p>
                 </div>

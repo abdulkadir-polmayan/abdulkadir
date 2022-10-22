@@ -32,11 +32,6 @@ import autoAnimate from "@formkit/auto-animate";
 import Project from "./Project";
 
 const Me = () => {
-  const [skill, setSkill] = useState(false);
-  const [project, setProject] = useState(false);
-
-  const [contact, setContact] = useState(false);
-
   const parent = useRef(null);
   const parent2 = useRef(null);
   const parent3 = useRef(null);
@@ -48,7 +43,6 @@ const Me = () => {
   useEffect(() => {
     parent2.current && autoAnimate(parent2.current);
   }, [parent2]);
-
   useEffect(() => {
     parent3.current && autoAnimate(parent3.current);
   }, [parent3]);
@@ -56,22 +50,33 @@ const Me = () => {
     parent4.current && autoAnimate(parent4.current);
   }, [parent4]);
 
+  const [skill, setSkill] = useState(false);
+  const [project, setProject] = useState(false);
+  const [contact, setContact] = useState(false);
   return (
-    <div className="max-w-xl flex flex-col md:flex-row ">
+    <div className={`max-w-xl flex flex-col md:flex-row `}>
       <header className="p-2 transition">
-        <div className="p-2 mb-5 flex justify-start">
+        <div
+          className={`p-2 mb-5 flex justify-start ${
+            project || skill || contact ? "blur-sm" : null
+          }`}
+        >
           <Link href="/blogPosts">
             <button className="bg-gradient-to-r  from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-1 px-2 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
               Go to my blogs <BsChevronRight className="h-5 w-5 ml-4" />
             </button>
           </Link>
         </div>
-        <div>
+        <div className={`${project || skill || contact ? "blur-sm" : null}`}>
           <h1 className="text-7xl font-serif">Abdulkadir Şenel</h1>
         </div>
 
         {/*//! ABOUT */}
-        <div className="flex flex-col p-3 rounded-xl mt-10 bg-white md:items-start">
+        <div
+          className={`${
+            project || skill || contact ? "blur-sm" : null
+          } flex flex-col p-3 rounded-xl mt-10 bg-white md:items-start`}
+        >
           <div className="text-2xl flex flex-col items-start   ">
             <h2 className="font-serif italic font-bold">I am junior</h2>
             <h3 className="text-3xl text-blue-500 font-sans font-bold">
@@ -102,7 +107,7 @@ const Me = () => {
         <div
           ref={parent}
           className={`${
-            skill ? "" : ""
+            project || contact ? "blur-sm" : ""
           } my-8 select-none rounded-xl py-8 bg-white`}
         >
           <div
@@ -156,7 +161,12 @@ const Me = () => {
         </div>
 
         {/*//! CONTACT */}
-        <div ref={parent2} className={` my-8  rounded-xl py-8 bg-white`}>
+        <div
+          ref={parent2}
+          className={` my-8 ${
+            project || skill ? "blur-sm" : ""
+          } rounded-xl py-8 bg-white`}
+        >
           <div
             onClick={() => {
               setContact(!contact);
@@ -223,8 +233,10 @@ const Me = () => {
         {/*//! PROJECTS */}
         <div
           ref={parent4}
-          className=" items-center flex-col justify-center -mx-2 px-[50xp] my-[10%] bg-slate-100
-           rounded-lg  "
+          className={`${
+            skill || contact ? "blur-sm" : null
+          } items-center flex-col justify-center -mx-2 px-[50xp] my-[10%] bg-slate-100
+           rounded-lg  `}
         >
           <div
             onClick={() => {
@@ -252,7 +264,7 @@ const Me = () => {
                   <p className="px-6 mt-2 font-semibold leading-5 text-black/90 text-left">
                     go to project :{" "}
                     <a className="font-medium text-black/75 " href="">
-                     www
+                      www
                     </a>{" "}
                   </p>
                   <p className="px-6 mt-2 font-semibold leading-5 text-black/90 text-left">

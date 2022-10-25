@@ -73,7 +73,7 @@ const Me = () => {
             project || skill || contact || current ? "blur-sm" : null
           }`}
         >
-          <h1 className="text-7xl font-serif">Abdulkadir Şenel</h1>
+          <h1 className="text-7xl font-ibm">Abdulkadir Şenel</h1>
         </div>
 
         {/*//! ABOUT */}

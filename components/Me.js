@@ -53,12 +53,13 @@ const Me = () => {
   const [skill, setSkill] = useState(false);
   const [project, setProject] = useState(false);
   const [contact, setContact] = useState(false);
+  const [current, setCurrent] = useState(false);
   return (
     <div className={`max-w-xl flex flex-col md:flex-row `}>
       <header className="p-2 transition">
         <div
           className={`p-2 mb-5 flex justify-start ${
-            project || skill || contact ? "blur-sm" : null
+            project || skill || contact || current ? "blur-sm" : null
           }`}
         >
           <Link href="/blogPosts">
@@ -67,14 +68,18 @@ const Me = () => {
             </button>
           </Link>
         </div>
-        <div className={`${project || skill || contact ? "blur-sm" : null}`}>
+        <div
+          className={`${
+            project || skill || contact || current ? "blur-sm" : null
+          }`}
+        >
           <h1 className="text-7xl font-serif">Abdulkadir Şenel</h1>
         </div>
 
         {/*//! ABOUT */}
         <div
           className={`${
-            project || skill || contact ? "blur-sm" : null
+            project || skill || contact || current ? "blur-sm" : null
           } flex flex-col p-3 rounded-xl mt-10 bg-white md:items-start`}
         >
           <div className="text-2xl flex flex-col items-start   ">
@@ -107,12 +112,12 @@ const Me = () => {
         <div
           ref={parent}
           className={`${
-            project || contact ? "blur-sm " : ""
+            project || contact || current ? "blur-sm " : ""
           } my-8 select-none rounded-xl py-8 bg-white`}
         >
           <div
             onClick={() => {
-              if (project || contact) {
+              if (project || contact || current) {
                 setSkill(false);
               } else {
                 setSkill(!skill);
@@ -168,12 +173,12 @@ const Me = () => {
         <div
           ref={parent2}
           className={` my-8 ${
-            project || skill ? "blur-sm" : ""
+            project || skill || current ? "blur-sm" : ""
           } rounded-xl py-8 bg-white`}
         >
           <div
             onClick={() => {
-              if (project || skill) {
+              if (project || skill || current) {
                 setContact(false);
               } else {
                 setContact(!contact);
@@ -238,17 +243,91 @@ const Me = () => {
           ) : null}
         </div>
 
+        {/*//! Cuurent work */}
+        <div
+          ref={parent3}
+          className={` my-8 ${
+            project || skill || contact ? "blur-sm" : ""
+          } rounded-xl py-8 bg-white`}
+        >
+          <div
+            onClick={() => {
+              if (project || skill || contact) {
+                setCurrent(false);
+              } else {
+                setCurrent(!current);
+              }
+            }}
+          >
+            <h2
+              className={`select-none text-center text-4xl font-sans transition duration-300 font-black }`}
+            >
+              Current Work
+            </h2>
+          </div>
+          {current ? (
+            <div className="p-3 mt-3">
+              {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
+                <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
+                solver)
+              </h3> */}
+              <h3 className=" items-center font-sans font-bold text-lg leading-6 tracking-tight">
+                You can rich via this links or methods. also my mail adress:{" "}
+                <a className="underline"> abdulkadirsenel63@gmail.com</a>
+              </h3>
+              <div className=" select-non mt-7">
+                <ol className="list-decimal	list-inside grid ml-[10%] grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
+                  <a
+                    href="https://www.linkedin.com/in/abdulkadir-senel/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center font-semibold"
+                  >
+                    <TbBrandLinkedin className="h-8 w-8 mr-2 rounded" />
+                    Linkedin
+                  </a>
+                  <a
+                    href="https://github.com/abdulkadir-polmayan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center font-semibold"
+                  >
+                    <TbBrandGithub className="h-8 w-8 mr-2 rounded" /> Github
+                  </a>
+                  <a
+                    href="https://twitter.com/spaceofAbdul"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center font-semibold"
+                  >
+                    <TbBrandTwitter className="h-8 w-8 mr-2 rounded" /> Twitter
+                  </a>
+
+                  <a
+                    href="https://read.cv/abdulkadir"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center font-semibold"
+                  >
+                    <TbBrandPagekit className="h-8 w-8 mr-2 rounded" /> read.cv
+                  </a>
+                </ol>
+              </div>
+            </div>
+          ) : null}
+        </div>
+
         {/*//! PROJECTS */}
         <div
           ref={parent4}
           className={`${
-            skill || contact ? "blur-sm" : null
+            skill || contact || current ? "blur-sm" : null
           } items-center flex-col justify-center -mx-2 px-[50xp] my-[10%] bg-slate-100
            rounded-lg  `}
         >
           <div
             onClick={() => {
-              if (contact || skill) {
+              if (contact || skill || current) {
                 setProject(false);
               } else {
                 setProject(!project);

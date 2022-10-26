@@ -18,6 +18,7 @@ import {
   TbBrandTailwind,
   TbBrandTwitter,
 } from "react-icons/tb";
+import { AiFillCaretRight } from "react-icons/ai";
 
 import {
   AiFillLinkedin,
@@ -101,7 +102,9 @@ const Me = () => {
                 My passion is making wisely thing . Best thing is not always is
                 hardest thing. Solve problem wisely .{" "}
               </p>
-              <p className=" font-bold mt-3">“Do not study hard , study smart.”</p>
+              <p className=" font-bold mt-3">
+                “Do not study hard , study smart.”
+              </p>
               <div className="mt-3 flex flex-col "></div>
             </div>
           </div>
@@ -112,7 +115,7 @@ const Me = () => {
           ref={parent}
           className={`${
             project || contact || current ? "blur-sm " : ""
-          } my-8 select-none rounded-xl py-8 bg-white`}
+          } my-8 select-none rounded-xl py-8`}
         >
           <div
             onClick={() => {
@@ -123,19 +126,17 @@ const Me = () => {
               }
             }}
           >
-            <h2
-              className={` text-center text-4xl font-serif transition duration-300 font-black }`}
-            >
-              My skills
+            <h2 className={` text-4xl font-black flex `}>
+              <AiFillCaretRight className="mr-3" /> My skills
             </h2>
           </div>
           {skill && (
-            <div className="p-3 mt-3">
+            <div className="p-3 mt-3 ml-2 border-l-2 border-green-900">
               {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
               </h3> */}
-              <h3 className="flex items-center font-serif font-bold text-lg leading-5 tracking-tight">
+              <h3 className="flex items-center font-bold text-lg leading-5 tracking-tight">
                 I know how to use this tools in order to solve problem or create
                 app.
               </h3>
@@ -173,7 +174,7 @@ const Me = () => {
           ref={parent2}
           className={` my-8 ${
             project || skill || current ? "blur-sm" : ""
-          } rounded-xl py-8 bg-white`}
+          } rounded-xl py-8 `}
         >
           <div
             onClick={() => {
@@ -184,14 +185,12 @@ const Me = () => {
               }
             }}
           >
-            <h2
-              className={`select-none text-center text-4xl font-sans transition duration-300 font-black }`}
-            >
-              Contact
+            <h2 className={`flex select-none text-4xl font-black }`}>
+              <AiFillCaretRight className="mr-3" /> Contact
             </h2>
           </div>
           {contact ? (
-            <div className="p-3 mt-3">
+            <div className="p-3 mt-3 ml-2 border-l-2 border-green-900">
               {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
@@ -247,7 +246,7 @@ const Me = () => {
           ref={parent3}
           className={` my-8 ${
             project || skill || contact ? "blur-sm" : ""
-          } rounded-xl py-8 bg-white`}
+          } rounded-xl py-8`}
         >
           <div
             onClick={() => {
@@ -258,60 +257,13 @@ const Me = () => {
               }
             }}
           >
-            <h2
-              className={`select-none text-center text-4xl font-sans transition duration-300 font-black }`}
-            >
-              Current Work
+            <h2 className={`select-none flex text-4xl font-black }`}>
+              <AiFillCaretRight className="mr-3" /> Current Work
             </h2>
           </div>
           {current ? (
-            <div className="p-3 mt-3">
-              {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
-                <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
-                solver)
-              </h3> */}
-              <h3 className=" items-center font-sans font-bold text-lg leading-6 tracking-tight">
-                You can rich via this links or methods. also my mail adress:{" "}
-                <a className="underline"> abdulkadirsenel63@gmail.com</a>
-              </h3>
-              <div className=" select-non mt-7">
-                <ol className="list-decimal	list-inside grid ml-[10%] grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
-                  <a
-                    href="https://www.linkedin.com/in/abdulkadir-senel/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center font-semibold"
-                  >
-                    <TbBrandLinkedin className="h-8 w-8 mr-2 rounded" />
-                    Linkedin
-                  </a>
-                  <a
-                    href="https://github.com/abdulkadir-polmayan"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center font-semibold"
-                  >
-                    <TbBrandGithub className="h-8 w-8 mr-2 rounded" /> Github
-                  </a>
-                  <a
-                    href="https://twitter.com/spaceofAbdul"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center font-semibold"
-                  >
-                    <TbBrandTwitter className="h-8 w-8 mr-2 rounded" /> Twitter
-                  </a>
-
-                  <a
-                    href="https://read.cv/abdulkadir"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center font-semibold"
-                  >
-                    <TbBrandPagekit className="h-8 w-8 mr-2 rounded" /> read.cv
-                  </a>
-                </ol>
-              </div>
+            <div className="p-3 mt-3 ml-2 border-l-2 border-green-900">
+              <p></p>
             </div>
           ) : null}
         </div>
@@ -321,7 +273,7 @@ const Me = () => {
           ref={parent4}
           className={`${
             skill || contact || current ? "blur-sm" : null
-          } items-center flex-col justify-center -mx-2 px-[50xp] my-[10%] bg-slate-100
+          } items-center flex-col justify-center -mx-2 px-[50xp] my-[10%] 
            rounded-lg  `}
         >
           <div
@@ -334,8 +286,8 @@ const Me = () => {
             }}
             className=" py-8"
           >
-            <h3 className="p- mt- text-center text-4xl font-serif font-black">
-              My projects.
+            <h3 className="flex text-4xl font-black">
+            <AiFillCaretRight className="mr-3 ml-2" /> My projects.
             </h3>
           </div>
           {project && (

@@ -58,17 +58,17 @@ const Me = () => {
   return (
     <div className={`max-w-xl flex flex-col md:flex-row `}>
       <header className="p-2 transition overflow-hidden">
-        <div className="p-10 bg-green-200 text-green-900">
+        {/* <div className="p-10 bg-green-200 text-green-900">
           <h1 className="text-5xl font-bold">Dmeo</h1>
           <p className="text-green-700">This demo for how is going to see</p>
-        </div>
+        </div> */}
         <div
           className={`p-2 mb-5 flex justify-start ${
             project || skill || contact || current ? "blur-sm" : null
           }`}
         >
           <Link href="/blogPosts">
-            <button className="bg-gradient-to-r  from-indigo-200 via-blue-100/50 to-transparent decoration-indigo-500 p-1 px-2 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
+            <button className="bg-gradient-to-r  p-1 px-2 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
               Go to my blogs <BsChevronRight className="h-5 w-5 ml-4" />
             </button>
           </Link>
@@ -76,16 +76,16 @@ const Me = () => {
         <div
           className={`${
             project || skill || contact || current ? "blur-sm" : null
-          }`}
+          } p-3`}
         >
-          <h1 className="text-7xl font-roboto font-bold">Abdulkadir Şenel</h1>
+          <h1 className="text-6xl font-roboto font-bold">Abdulkadir Şenel</h1>
         </div>
 
         {/*//! ABOUT */}
         <div
           className={`${
             project || skill || contact || current ? "blur-sm" : null
-          } flex flex-col p-3 font-roboto rounded-xl mt-10 md:items-start`}
+          } flex flex-col p-3 font-roboto rounded-xl mt-5 md:items-start`}
         >
           <div className="text-2xl flex flex-col items-start   ">
             <h2 className="font-medium">I am junior</h2>
@@ -115,7 +115,7 @@ const Me = () => {
           ref={parent}
           className={`${
             project || contact || current ? "blur-sm " : ""
-          } my-8 select-none rounded-xl py-8`}
+          } my-2 select-none rounded-xl py-2`}
         >
           <div
             onClick={() => {
@@ -174,7 +174,7 @@ const Me = () => {
           ref={parent2}
           className={` my-8 ${
             project || skill || current ? "blur-sm" : ""
-          } rounded-xl py-8 `}
+          } rounded-xl py-2 `}
         >
           <div
             onClick={() => {
@@ -246,7 +246,7 @@ const Me = () => {
           ref={parent3}
           className={` my-8 ${
             project || skill || contact ? "blur-sm" : ""
-          } rounded-xl py-8`}
+          } rounded-xl py-2`}
         >
           <div
             onClick={() => {
@@ -284,10 +284,10 @@ const Me = () => {
                 setProject(!project);
               }
             }}
-            className=" py-8"
+            className=" py-2"
           >
             <h3 className="flex text-4xl font-black">
-            <AiFillCaretRight className="mr-3 ml-2" /> My projects.
+              <AiFillCaretRight className="mr-3 ml-2" /> My projects.
             </h3>
           </div>
           {project && (

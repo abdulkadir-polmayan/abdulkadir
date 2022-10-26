@@ -88,26 +88,21 @@ const Me = () => {
         >
           <div className="text-2xl flex flex-col items-start   ">
             <h2 className="font-medium">I am junior</h2>
-            <h3 className="text-3xl font-bold">
-              Software Developer
-            </h3>
+            <h3 className="text-3xl font-bold">Software Developer</h3>
           </div>
           <div className=" leading-6 tracking-tight text-xl text-left py-2">
             <div className="mb-2 ">
-              <p className="">
+              <p className="break-word">
                 {" "}
+                I am 20 years old. I am studying ELT(English Language Teacing).
+                But I am dealing with software in my free time.
+              </p>
+              <p className="mt-3 break-word">
                 My passion is making wisely thing . Best thing is not always is
                 hardest thing. Solve problem wisely .{" "}
               </p>
-              <p className=" font-bold ">
-                “Do not study hard , study smart.”
-              </p>
-              <div className="mt-3 flex flex-col ">
-                <p className="">But there is more important thing is</p>
-                <p className="md:ml-2 font-semibold italic ">
-                  “being nice for people.”
-                </p>
-              </div>
+              <p className=" font-bold mt-3">“Do not study hard , study smart.”</p>
+              <div className="mt-3 flex flex-col "></div>
             </div>
           </div>
         </div>

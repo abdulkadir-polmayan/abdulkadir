@@ -68,7 +68,7 @@ const Me = () => {
           }`}
         >
           <Link href="/blogPosts">
-            <button className="bg-gradient-to-r  p-1 px-2 rounded text-center text-lg font-black underline font-serif italic flex items-center select-none">
+            <button className="bg-yellow-100 p-1 px-2 rounded text-center text-lg font-black flex items-center select-none tracking-tight">
               Go to my blogs <BsChevronRight className="h-5 w-5 ml-4" />
             </button>
           </Link>

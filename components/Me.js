@@ -72,8 +72,8 @@ const Me = () => {
           }`}
         >
           <Link href="/blogPosts">
-            <button className=" bg-green-900 text-green-200 p-2 px-2 mt-8 rounded text-center text-xl font-black flex items-center select-none tracking-tight">
-            Visit my Blog <BsChevronRight className="h-5 w-5 ml-4" />
+            <button className=" bg-green-900 text-green-200 p-2 px-2 mt-8 rounded text-center text-xl font-black flex items-center select-none tracking-normal">
+            Visit my Blog <BsChevronRight className="h-5 w-5 ml-2" />
             </button>
           </Link>
         </div>

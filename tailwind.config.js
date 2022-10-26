@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: { ibm: ["IBM Plex Sans", "sans-serif"] },
+      fontFamily: { roboto: ["Roboto", "sans-serif"] },
     },
   },
   plugins: [require("@tailwindcss/typography")],

@@ -56,7 +56,11 @@ const Me = () => {
   const [current, setCurrent] = useState(false);
   return (
     <div className={`max-w-xl flex flex-col md:flex-row `}>
-      <header className="p-2 transition">
+      <header className="p-2 transition overflow-hidden">
+        <div className="p-10 bg-green-200 text-green-900">
+          <h1 className="text-5xl font-bold">Dmeo</h1>
+          <p className="text-green-700">This demo for how is going to see</p>
+        </div>
         <div
           className={`p-2 mb-5 flex justify-start ${
             project || skill || contact || current ? "blur-sm" : null
@@ -73,29 +77,29 @@ const Me = () => {
             project || skill || contact || current ? "blur-sm" : null
           }`}
         >
-          <h1 className="text-7xl font-ibm">Abdulkadir Şenel</h1>
+          <h1 className="text-7xl font-roboto font-bold">Abdulkadir Şenel</h1>
         </div>
 
         {/*//! ABOUT */}
         <div
           className={`${
             project || skill || contact || current ? "blur-sm" : null
-          } flex flex-col p-3 rounded-xl mt-10 bg-white md:items-start`}
+          } flex flex-col p-3 font-roboto rounded-xl mt-10 md:items-start`}
         >
           <div className="text-2xl flex flex-col items-start   ">
-            <h2 className="font-serif italic font-bold">I am junior</h2>
-            <h3 className="text-3xl text-black font-serif font-semibold">
+            <h2 className="font-medium">I am junior</h2>
+            <h3 className="text-3xl text-black font-bold">
               Software Developer
             </h3>
           </div>
-          <div className=" leading-6 tracking-tight font-serif text-xl text-left py-2">
+          <div className=" leading-6 tracking-tight text-xl text-left py-2">
             <div className="mb-2 ">
               <p className="">
                 {" "}
                 My passion is making wisely thing . Best thing is not always is
                 hardest thing. Solve problem wisely .{" "}
               </p>
-              <p className=" font-bold  italic">
+              <p className=" font-bold ">
                 “Do not study hard , study smart.”
               </p>
               <div className="mt-3 flex flex-col ">

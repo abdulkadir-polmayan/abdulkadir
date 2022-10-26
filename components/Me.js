@@ -88,7 +88,7 @@ const Me = () => {
         >
           <div className="text-2xl flex flex-col items-start   ">
             <h2 className="font-medium">I am junior</h2>
-            <h3 className="text-3xl text-black font-bold">
+            <h3 className="text-3xl font-bold">
               Software Developer
             </h3>
           </div>

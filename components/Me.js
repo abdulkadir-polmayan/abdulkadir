@@ -273,7 +273,7 @@ const Me = () => {
           ref={parent4}
           className={`${
             skill || contact || current ? "blur-sm" : null
-          } items-center flex-col justify-center -mx-2 px-[50xp] my-[10%] 
+          } items-center flex-col justify-center -mx-2 px-[50xp] mb-[10%] 
            rounded-lg  `}
         >
           <div

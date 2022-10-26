@@ -62,17 +62,17 @@ const Me = () => {
   return (
     <div className={`max-w-xl flex flex-col md:flex-row `}>
       <header className="p-2 transition overflow-hidden">
-        <div className={`p-10   text-green-900`}>
+        {/* <div className={`p-10   text-green-900`}>
           <h1 className="text-5xl font-bold">Dmeo</h1>
           <p className="">This demo for how is going to see</p>
-        </div>
+        </div> */}
         <div
           className={`p-2 mb-5 flex justify-start ${
             project || skill || contact || current ? "blur-sm" : null
           }`}
         >
           <Link href="/blogPosts">
-            <button className="bg-green-900 text-green-200 p-1 px-2 rounded text-center text-lg font-black flex items-center select-none tracking-tight">
+            <button className=" bg-green-900 text-green-200 p-2 px-2 mt-8 rounded text-center text-xl font-black flex items-center select-none tracking-tight">
             Visit my Blog <BsChevronRight className="h-5 w-5 ml-4" />
             </button>
           </Link>
@@ -95,8 +95,8 @@ const Me = () => {
             <h2 className="font-medium">I am a </h2>
             <h3 className="text-3xl font-bold">Software Developer</h3>
           </div>
-          <div className=" leading-6 tracking-tight text-xl text-left py-2">
-            <div className="mb-2 ">
+          <div className=" leading-6  tracking-tight text-xl text-left py-2">
+            <div className="mb-2 pl-2 border-l-2 border-green-600">
               <p className="break-word text-green-700">
                 {" "}
                 I am a 20 year old studying ELT ( English Language Teaching), but I like to work with software in my free time.</p>
@@ -132,7 +132,7 @@ const Me = () => {
             </h2>
           </div>
           {skill && (
-            <div className="p-3 mt-3 ml-2 border-l-2 border-green-900 text-green-700">
+            <div className="p-3 mt-3 ml-2 border-l-2 border-green-600 text-green-700">
               {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
@@ -191,7 +191,7 @@ const Me = () => {
             </h2>
           </div>
           {contact ? (
-            <div className="text-green-700 p-3 mt-3 ml-2 border-l-2 border-green-900">
+            <div className="text-green-700 p-3 mt-3 ml-2 border-l-2 border-green-600">
               {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
@@ -263,7 +263,7 @@ const Me = () => {
             </h2>
           </div>
           {current ? (
-            <div className="text-green-700 p-3 mt-3 ml-2 border-l-2 border-green-900">
+            <div className="text-green-700 p-3 mt-3 ml-2 border-l-2 border-green-600">
               <p></p>
             </div>
           ) : null}

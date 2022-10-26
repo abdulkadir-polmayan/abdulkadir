@@ -51,6 +51,10 @@ const Me = () => {
     parent4.current && autoAnimate(parent4.current);
   }, [parent4]);
 
+  const colors = [ "red" , "cyan" ,"purple"]
+
+  
+
   const [skill, setSkill] = useState(false);
   const [project, setProject] = useState(false);
   const [contact, setContact] = useState(false);
@@ -58,18 +62,18 @@ const Me = () => {
   return (
     <div className={`max-w-xl flex flex-col md:flex-row `}>
       <header className="p-2 transition overflow-hidden">
-        {/* <div className="p-10 bg-green-200 text-green-900">
+        <div className={`p-10   text-green-900`}>
           <h1 className="text-5xl font-bold">Dmeo</h1>
-          <p className="text-green-700">This demo for how is going to see</p>
-        </div> */}
+          <p className="">This demo for how is going to see</p>
+        </div>
         <div
           className={`p-2 mb-5 flex justify-start ${
             project || skill || contact || current ? "blur-sm" : null
           }`}
         >
           <Link href="/blogPosts">
-            <button className="bg-yellow-100 p-1 px-2 rounded text-center text-lg font-black flex items-center select-none tracking-tight">
-              Go to my blogs <BsChevronRight className="h-5 w-5 ml-4" />
+            <button className="bg-green-900 text-green-200 p-1 px-2 rounded text-center text-lg font-black flex items-center select-none tracking-tight">
+            Visit my Blog <BsChevronRight className="h-5 w-5 ml-4" />
             </button>
           </Link>
         </div>
@@ -88,21 +92,18 @@ const Me = () => {
           } flex flex-col p-3 font-roboto rounded-xl mt-5 md:items-start`}
         >
           <div className="text-2xl flex flex-col items-start   ">
-            <h2 className="font-medium">I am junior</h2>
+            <h2 className="font-medium">I am a </h2>
             <h3 className="text-3xl font-bold">Software Developer</h3>
           </div>
           <div className=" leading-6 tracking-tight text-xl text-left py-2">
             <div className="mb-2 ">
-              <p className="break-word">
+              <p className="break-word text-green-700">
                 {" "}
-                I am 20 years old. I am studying ELT(English Language Teacing).
-                But I am dealing with software in my free time.
+                I am a 20 year old studying ELT ( English Language Teaching), but I like to work with software in my free time.</p>
+              <p className="mt-3 break-word text-green-700">
+              My passion is making things wisely. The best thing is not always the hardest thing to make. Solve problems wisely{" "}
               </p>
-              <p className="mt-3 break-word">
-                My passion is making wisely thing . Best thing is not always is
-                hardest thing. Solve problem wisely .{" "}
-              </p>
-              <p className=" font-bold mt-3">
+              <p className=" font-bold mt-3 text-green-800">
                 “Do not study hard , study smart.”
               </p>
               <div className="mt-3 flex flex-col "></div>
@@ -127,17 +128,17 @@ const Me = () => {
             }}
           >
             <h2 className={` text-4xl font-black flex `}>
-              <AiFillCaretRight className="mr-3" /> My skills
+              <AiFillCaretRight className="mr-3" /> My toolkit
             </h2>
           </div>
           {skill && (
-            <div className="p-3 mt-3 ml-2 border-l-2 border-green-900">
+            <div className="p-3 mt-3 ml-2 border-l-2 border-green-900 text-green-700">
               {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
               </h3> */}
               <h3 className="flex items-center font-bold text-lg leading-5 tracking-tight">
-                I know how to use this tools in order to solve problem or create
+               My preffered technologies these are , in order to solve problem or create
                 app.
               </h3>
               <div className="  mt-7">
@@ -190,7 +191,7 @@ const Me = () => {
             </h2>
           </div>
           {contact ? (
-            <div className="p-3 mt-3 ml-2 border-l-2 border-green-900">
+            <div className="text-green-700 p-3 mt-3 ml-2 border-l-2 border-green-900">
               {/* <h3 className="flex items-center underline underline-offset-8 decoration-2  text-lg font-medium">
                 <BiBrain className="h-10 w-10 mr-2 rounded" /> My brain (problem
                 solver)
@@ -262,7 +263,7 @@ const Me = () => {
             </h2>
           </div>
           {current ? (
-            <div className="p-3 mt-3 ml-2 border-l-2 border-green-900">
+            <div className="text-green-700 p-3 mt-3 ml-2 border-l-2 border-green-900">
               <p></p>
             </div>
           ) : null}
@@ -291,7 +292,7 @@ const Me = () => {
             </h3>
           </div>
           {project && (
-            <div className="flex flex-col items-center  overflow-hidden ">
+            <div className="flex flex-col items-center  overflow-hidden text-green-700">
               {/* project */}
               <div className="flex flex-col shadow-lg w-[340px] m-1 max-w-sm  rounded my-10 bg-white ">
                 <div className="flex justify-center p-5">

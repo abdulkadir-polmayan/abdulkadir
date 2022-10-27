@@ -19,7 +19,7 @@ import {
   TbBrandTwitter,
 } from "react-icons/tb";
 import { AiFillCaretRight } from "react-icons/ai";
-import me from "../images/me.JPEG";
+import me from "../images/me.png";
 
 import {
   AiFillLinkedin,
@@ -66,25 +66,25 @@ const Me = () => {
           <p className="">This demo for how is going to see</p>
         </div> */}
         <div
-          className={`p-2 mb-5 flex justify-between items-center ${
+          className={`px-2 mb-10  flex justify-between items-center ${
             project || skill || contact || current ? "blur-sm" : null
           }`}
         >
           <div>
-            <Link href="/blogPosts">
-              <button className=" bg-green-900 text-green-200 p-2 px-2 mt-8 rounded text-center text-xl font-black flex items-center select-none tracking-normal">
-                Visit my Blog <BsChevronRight className="h-5 w-5 ml-2" />
-              </button>
-            </Link>
-          </div>
-          <div>
             <Image
               src={me}
               alt="Picture of the author"
-              width={150}
-              height={150}
+              width={100}
+              height={100}
               className=" rounded-full"
             />
+          </div>
+          <div>
+            <Link href="/blogPosts">
+              <button className=" bg-green-900 text-green-200 p-2 px-2  rounded text-center text-xl font-black flex items-center select-none tracking-normal">
+                Visit my Blog <BsChevronRight className="h-5 w-5 ml-2" />
+              </button>
+            </Link>
           </div>
         </div>
 

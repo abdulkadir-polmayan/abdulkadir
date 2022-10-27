@@ -19,6 +19,7 @@ import {
   TbBrandTwitter,
 } from "react-icons/tb";
 import { AiFillCaretRight } from "react-icons/ai";
+import me from "../images/me.JPEG";
 
 import {
   AiFillLinkedin,
@@ -51,9 +52,7 @@ const Me = () => {
     parent4.current && autoAnimate(parent4.current);
   }, [parent4]);
 
-  const colors = [ "red" , "cyan" ,"purple"]
-
-  
+  const colors = ["red", "cyan", "purple"];
 
   const [skill, setSkill] = useState(false);
   const [project, setProject] = useState(false);
@@ -67,21 +66,34 @@ const Me = () => {
           <p className="">This demo for how is going to see</p>
         </div> */}
         <div
-          className={`p-2 mb-5 flex justify-start ${
+          className={`p-2 mb-5 flex justify-between items-center ${
             project || skill || contact || current ? "blur-sm" : null
           }`}
         >
-          <Link href="/blogPosts">
-            <button className=" bg-green-900 text-green-200 p-2 px-2 mt-8 rounded text-center text-xl font-black flex items-center select-none tracking-normal">
-            Visit my Blog <BsChevronRight className="h-5 w-5 ml-2" />
-            </button>
-          </Link>
+          <div>
+            <Link href="/blogPosts">
+              <button className=" bg-green-900 text-green-200 p-2 px-2 mt-8 rounded text-center text-xl font-black flex items-center select-none tracking-normal">
+                Visit my Blog <BsChevronRight className="h-5 w-5 ml-2" />
+              </button>
+            </Link>
+          </div>
+          <div>
+            <Image
+              src={me}
+              alt="Picture of the author"
+              width={150}
+              height={150}
+              className=" rounded-full"
+            />
+          </div>
         </div>
+
         <div
           className={`${
             project || skill || contact || current ? "blur-sm" : null
           } p-3`}
         >
+          {" "}
           <h1 className="text-6xl font-roboto font-bold">Abdulkadir Şenel</h1>
         </div>
 
@@ -99,9 +111,12 @@ const Me = () => {
             <div className="mb-2 pl-2 border-l-2 border-green-600">
               <p className="break-word text-green-700">
                 {" "}
-                I am a 20 year old studying ELT ( English Language Teaching), but I like to work with software in my free time.</p>
+                I am a 20 year old studying ELT ( English Language Teaching),
+                but I like to work with software in my free time.
+              </p>
               <p className="mt-3 break-word text-green-700">
-              My passion is making things wisely. The best thing is not always the hardest thing to make. Solve problems wisely{" "}
+                My passion is making things wisely. The best thing is not always
+                the hardest thing to make. Solve problems wisely{" "}
               </p>
               <p className=" font-bold mt-3 text-green-800">
                 “Do not study hard , study smart.”
@@ -138,8 +153,8 @@ const Me = () => {
                 solver)
               </h3> */}
               <h3 className="flex items-center font-bold text-lg leading-5 tracking-tight">
-               My preffered technologies these are , in order to solve problem or create
-                app.
+                My preffered technologies these are , in order to solve problem
+                or create app.
               </h3>
               <div className="  mt-7">
                 <ol className="list-decimal	list-inside grid ml-[10%] grid-rows-3 gap-x-9 grid-flow-col gap-2 ">

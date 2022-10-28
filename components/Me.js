@@ -19,7 +19,7 @@ import {
   TbBrandTwitter,
 } from "react-icons/tb";
 import { AiFillCaretRight } from "react-icons/ai";
-import me from "../images/me.jpeg";
+import me from "../images/me.png";
 
 import {
   AiFillLinkedin,

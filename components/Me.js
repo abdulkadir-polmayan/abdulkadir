@@ -81,7 +81,7 @@ const Me = () => {
           </div>
           <div>
             <Link href="/blogPosts">
-              <button className=" bg-green-900 text-green-200 p-2 px-2  rounded text-center text-xl font-black flex items-center select-none tracking-normal">
+              <button className=" bg-green-900 text-green-200 p-2 px-2  rounded text-center text-xl font-bold flex items-center select-none tracking-normal">
                 Visit my Blog <BsChevronRight className="h-5 w-5 ml-2" />
               </button>
             </Link>
@@ -94,14 +94,14 @@ const Me = () => {
           } p-3`}
         >
           {" "}
-          <h1 className="text-6xl font-roboto font-bold">Abdulkadir Şenel</h1>
+          <h1 className="text-6xl font-bold">Abdulkadir Şenel</h1>
         </div>
 
         {/*//! ABOUT */}
         <div
           className={`${
             project || skill || contact || current ? "blur-sm" : null
-          } flex flex-col p-3 font-roboto rounded-xl mt-5 md:items-start`}
+          } flex flex-col p-3 rounded-xl mt-5 md:items-start`}
         >
           <div className="text-2xl flex flex-col items-start   ">
             <h2 className="font-medium">I am a </h2>
@@ -142,7 +142,7 @@ const Me = () => {
               }
             }}
           >
-            <h2 className={` text-4xl font-black flex `}>
+            <h2 className={` text-4xl font-bold flex `}>
               <AiFillCaretRight className="mr-3" /> My toolkit
             </h2>
           </div>
@@ -158,24 +158,24 @@ const Me = () => {
               </h3>
               <div className="  mt-7">
                 <ol className="list-decimal	list-inside grid ml-[10%] grid-rows-3 gap-x-9 grid-flow-col gap-2 ">
-                  <li className="flex items-center font-semibold">
+                  <li className="flex items-center font-bold">
                     <TbBrandReactNative className="h-8 w-8 mr-2 rounded" />{" "}
                     React
                   </li>
-                  <li className="flex items-center font-semibold">
+                  <li className="flex items-center font-bold">
                     <TbBrandNextjs className="h-8 w-8 mr-2 rounded" /> Next
                   </li>
-                  <li className="flex items-center font-semibold">
+                  <li className="flex items-center font-bold">
                     <TbBrandSvelte className="h-8 w-8 mr-2 rounded" /> Sanity
                   </li>
-                  <li className="flex items-center font-semibold">
+                  <li className="flex items-center font-bold">
                     <TbBrandFirebase className="h-8 w-8 mr-2 rounded" />{" "}
                     Firebase
                   </li>
-                  <li className="flex items-center font-semibold">
+                  <li className="flex items-center font-bold">
                     <SiExpo className="h-6 w-8 mr-2 rounded" /> Expo
                   </li>
-                  <li className="flex items-center font-semibold">
+                  <li className="flex items-center font-bold">
                     <TbBrandTailwind className="h-8 w-8 mr-2 rounded" />
                     Tailwind
                   </li>
@@ -201,7 +201,7 @@ const Me = () => {
               }
             }}
           >
-            <h2 className={`flex select-none text-4xl font-black }`}>
+            <h2 className={`flex select-none text-4xl font-bold }`}>
               <AiFillCaretRight className="mr-3" /> Contact
             </h2>
           </div>
@@ -221,7 +221,7 @@ const Me = () => {
                     href="https://www.linkedin.com/in/abdulkadir-senel/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center font-semibold"
+                    className="flex items-center font-bold"
                   >
                     <TbBrandLinkedin className="h-8 w-8 mr-2 rounded" />
                     Linkedin
@@ -230,7 +230,7 @@ const Me = () => {
                     href="https://github.com/abdulkadir-polmayan"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center font-semibold"
+                    className="flex items-center font-bold"
                   >
                     <TbBrandGithub className="h-8 w-8 mr-2 rounded" /> Github
                   </a>
@@ -238,7 +238,7 @@ const Me = () => {
                     href="https://twitter.com/spaceofAbdul"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center font-semibold"
+                    className="flex items-center font-bold"
                   >
                     <TbBrandTwitter className="h-8 w-8 mr-2 rounded" /> Twitter
                   </a>
@@ -247,7 +247,7 @@ const Me = () => {
                     href="https://read.cv/abdulkadir"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center font-semibold"
+                    className="flex items-center font-bold"
                   >
                     <TbBrandPagekit className="h-8 w-8 mr-2 rounded" /> read.cv
                   </a>
@@ -273,7 +273,7 @@ const Me = () => {
               }
             }}
           >
-            <h2 className={`select-none flex text-4xl font-black }`}>
+            <h2 className={`select-none flex text-4xl font-bold }`}>
               <AiFillCaretRight className="mr-3" /> Current Work
             </h2>
           </div>
@@ -302,7 +302,7 @@ const Me = () => {
             }}
             className=" py-2"
           >
-            <h3 className="flex text-4xl font-black">
+            <h3 className="flex text-4xl font-bold">
               <AiFillCaretRight className="mr-3 ml-2" /> My projects.
             </h3>
           </div>
@@ -312,80 +312,76 @@ const Me = () => {
               <div className="flex flex-col shadow-lg w-[340px] m-1 max-w-sm  rounded my-10 bg-white ">
                 <div className="flex justify-center p-5">
                   <div className="w-40 h-40 shadow-md bg-gradient-to-b from-white  to-yellow-100 rounded flex justify-center items-center pb-2">
-                    <p className="font-serif text-9xl text-center font-black ">
-                      A
-                    </p>
+                    <p className=" text-9xl text-center font-bold ">A</p>
                   </div>
                 </div>
                 <div className="text-center">
-                  <h4 className=" font-black text-3xl mb-2">
-                    Single page Blog
-                  </h4>
-                  <p className="px-6  tracking-tight leading-5 text-md text-black/70 text-left">
+                  <h4 className=" font-bold text-3xl mb-2">Single page Blog</h4>
+                  <p className="px-6  tracking-tight leading-5 text-md text-bold/70 text-left">
                     help people to remember the ideas of what they live for and
                     the importa of life
                   </p>
-                  <p className="px-6 mt-2 font-semibold leading-5 text-black/90 text-left">
+                  <p className="px-6 mt-2 font-bold leading-5 text-bold/90 text-left">
                     go to project :{" "}
-                    <a className="font-medium text-black/75 " href="">
+                    <a className="font-medium text-bold/75 " href="">
                       www
                     </a>{" "}
                   </p>
-                  <p className="px-6 mt-2 font-semibold leading-5 text-black/90 text-left">
+                  <p className="px-6 mt-2 font-bold leading-5 text-bold/90 text-left">
                     Github :{" "}
-                    <a className="font-medium text-black/75 " href="">
+                    <a className="font-medium text-bold/75 " href="">
                       www
                     </a>{" "}
                   </p>
-                  <p className="px-6  mt-2 font-semibold leading-5 text-black/90 text-left">
+                  <p className="px-6  mt-2 font-bold leading-5 text-bold/90 text-left">
                     How I did :{" "}
-                    <a className="font-medium text-black/75 " href="">
+                    <a className="font-medium text-bold/75 " href="">
                       www
                     </a>{" "}
                   </p>
-                  <p className=" mx-6 my-4 font-black  text-black/70 text-left">
+                  <p className=" mx-6 my-4 font-bold  text-bold/70 text-left">
                     2022
                   </p>
                 </div>
               </div>
               <div className="flex flex-col shadow-lg w-[340px] m-1 max-w-sm  rounded my-10 bg-white ">
                 <div className="flex justify-center p-5">
-                  <div className="w-40 h-40 shadow-md bg-gradient-to-t from-black  to-indigo-900 rounded flex justify-center items-center pb-2">
+                  <div className="w-40 h-40 shadow-md bg-gradient-to-t from-bold  to-indigo-900 rounded flex justify-center items-center pb-2">
                     <p className="font-sans tracking-tighter font-medium text-white text-9xl text-center ">
                       M
                     </p>
                   </div>
                 </div>
                 <div className="text-center">
-                  <h4 className=" font-black text-3xl mb-2">Motivation</h4>
-                  <p className="px-6  tracking-tight leading-5 text-md text-black/70 text-left">
+                  <h4 className=" font-bold text-3xl mb-2">Motivation</h4>
+                  <p className="px-6  tracking-tight leading-5 text-md text-bold/70 text-left">
                     help people to inspire themself with their own imagination
                   </p>
-                  <p className="px-6 mt-2 font-semibold leading-5 text-black/90 text-left">
+                  <p className="px-6 mt-2 font-bold leading-5 text-bold/90 text-left">
                     go to project :{" "}
                     <a
-                      className="font-medium text-black/75 "
+                      className="font-medium text-bold/75 "
                       href="https://motivational-saids.vercel.app/"
                     >
                       motivational-saids
                     </a>{" "}
                   </p>
-                  <p className="px-6 mt-2 font-semibold leading-5 text-black/90 text-left">
+                  <p className="px-6 mt-2 font-bold leading-5 text-bold/90 text-left">
                     Github :{" "}
                     <a
-                      className="font-medium text-black/75 "
+                      className="font-medium text-bold/75 "
                       href="https://github.com/abdulkadir-polmayan/motivational-saids"
                     >
                       github.motivational-saids
                     </a>{" "}
                   </p>
-                  <p className="px-6  mt-2 font-semibold leading-5 text-black/90 text-left">
+                  <p className="px-6  mt-2 font-bold leading-5 text-bold/90 text-left">
                     How I did :{" "}
-                    <a className="font-medium text-black/75 " href="">
+                    <a className="font-medium text-bold/75 " href="">
                       www
                     </a>{" "}
                   </p>
-                  <p className=" mx-6 my-4 font-black  text-black/70 text-left">
+                  <p className=" mx-6 my-4 font-bold  text-bold/70 text-left">
                     2022
                   </p>
                 </div>

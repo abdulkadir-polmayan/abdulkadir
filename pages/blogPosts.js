@@ -48,7 +48,7 @@ export default function Blogs({ post }) {
       ),
     },
   };
-
+  console.log(post);
   return (
     <div className="overflow-hidden flex items-center flex-col min-h-screen m-1 md:m-5 rounded bg-gradient-to-t from-indigo-200 via-blue-100/50 bg-white text-black ">
       <div className="flex flex-col md:flex-row p-4">

@@ -1,15 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import Navbar from "./Navbar";
-import { BsChevronDown } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
-import { BiBrain } from "react-icons/bi";
 import { SiExpo } from "react-icons/si";
-import blogLogo from "../images/blog-logo.png";
 import {
   TbBrandFirebase,
   TbBrandGithub,
-  TbBrandGmail,
   TbBrandLinkedin,
   TbBrandNextjs,
   TbBrandPagekit,
@@ -20,18 +15,8 @@ import {
 } from "react-icons/tb";
 import { AiFillCaretRight } from "react-icons/ai";
 import me from "../images/me.png";
-
-import {
-  AiFillLinkedin,
-  AiFillMail,
-  AiFillMessage,
-  AiFillTwitterSquare,
-} from "react-icons/ai";
-
 import Image from "next/image";
-
 import autoAnimate from "@formkit/auto-animate";
-import Project from "./Project";
 
 const Me = () => {
   const parent = useRef(null);

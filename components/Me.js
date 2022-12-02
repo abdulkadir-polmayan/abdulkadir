@@ -15,6 +15,8 @@ import {
 } from "react-icons/tb";
 import { AiFillCaretRight } from "react-icons/ai";
 import me from "../images/me.png";
+import figjam from "../images/figjam.png";
+import figma from "../images/figma.png";
 import Image from "next/image";
 import autoAnimate from "@formkit/auto-animate";
 
@@ -264,7 +266,64 @@ const Me = () => {
           </div>
           {current ? (
             <div className="text-green-700 p-3 mt-3 ml-2 border-l-2 border-green-600">
-              <p></p>
+              <div className="flex flex-col shadow-lg w-[340px] m-1 max-w-sm  rounded my-10 bg-white ">
+                <div className="flex justify-center p-5">
+                  <div className="w-40 h-40 shadow-md bg-gradient-to-t from-black  to-gray-700 rounded flex justify-center items-center pb-2">
+                    <p className=" text-9xl text-center tex font-bold text-white font-serif ">
+                      L
+                    </p>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h4 className=" font-bold  text-3xl mb-2">Last-Day</h4>
+                  <p className="px-6  tracking-tight leading-5 text-md text-bold/70 text-left">
+                    help to measure peoples average life time , but it is not
+                    for demotivating. look your remaining life and use it
+                    efficently.
+                  </p>
+                  <p className="px-6 mt-2 font-bold leading-5 text-bold/90 text-left">
+                    figjam </p>
+                  <div>
+                    <Image
+                      src={figjam}
+                      alt="Picture of the author"
+                      width={694}
+                      height={429}
+                      className="rounded m-2"
+                    />
+                     <p className="px-6 mt-2 font-bold leading-5 text-bold/90 text-left">
+                    figjam </p>
+                      <Image
+                      src={figma}
+                      alt="Picture of the author"
+                      width={825}
+                      height={513}
+                      className="rounded m-2"
+                    />
+                  </div>
+                  <p className="px-6 mt-2 font-bold leading-5 text-bold/90 text-left">
+                    go to project :{" "}
+                    <a className="font-medium text-bold/75 " href="">
+                      www
+                    </a>{" "}
+                  </p>
+                  <p className="px-6 mt-2 font-bold leading-5 text-bold/90 text-left">
+                    Github :{" "}
+                    <a className="font-medium text-bold/75 " href="">
+                      www
+                    </a>{" "}
+                  </p>
+                  <p className="px-6  mt-2 font-bold leading-5 text-bold/90 text-left">
+                    How I did :{" "}
+                    <a className="font-medium text-bold/75 " href="">
+                      www
+                    </a>{" "}
+                  </p>
+                  <p className=" mx-6 my-4 font-bold  text-bold/70 text-left">
+                    2022
+                  </p>
+                </div>
+              </div>
             </div>
           ) : null}
         </div>

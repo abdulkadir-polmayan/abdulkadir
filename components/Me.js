@@ -14,7 +14,7 @@ import {
   TbBrandTwitter,
 } from "react-icons/tb";
 import { AiFillCaretRight } from "react-icons/ai";
-import me from "../images/me.png";
+import me from "../images/ben.jpeg";
 import figjam from "../images/figjam.png";
 import figma from "../images/figma.png";
 import Image from "next/image";

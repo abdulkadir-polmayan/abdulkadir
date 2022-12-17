@@ -69,7 +69,7 @@ const Me = () => {
           <div>
             <Link href="/blogPosts">
               <button className=" bg-green-900 text-green-200 p-2 px-2  rounded text-center text-xl font-bold flex items-center select-none tracking-normal">
-                Visit my Blog <BsChevronRight className="h-5 w-5 ml-2" />
+                Visit my Notes <BsChevronRight className="h-5 w-5 ml-2" />
               </button>
             </Link>
           </div>
@@ -266,7 +266,7 @@ const Me = () => {
           </div>
           {current ? (
             <div className="text-green-700 p-3 mt-3 ml-2 border-l-2 border-green-600">
-              <div className="flex flex-col shadow-lg w-[340px] m-1 max-w-sm  rounded my-10 bg-white ">
+              <div className="flex flex-col shadow-lg m-1   rounded my-10 bg-white ">
                 <div className="flex justify-center p-5">
                   <div className="w-40 h-40 shadow-md bg-gradient-to-t from-black  to-gray-700 rounded flex justify-center items-center pb-2">
                     <p className=" text-9xl text-center tex font-bold text-white font-serif ">
@@ -282,7 +282,8 @@ const Me = () => {
                     efficently.
                   </p>
                   <p className="px-6 mt-2 font-bold leading-5 text-bold/90 text-left">
-                    figjam </p>
+                    figjam
+                  </p>
                   <div>
                     <Image
                       src={figjam}
@@ -291,9 +292,10 @@ const Me = () => {
                       height={429}
                       className="rounded m-2"
                     />
-                     <p className="px-6 mt-2 font-bold leading-5 text-bold/90 text-left">
-                    figjam </p>
-                      <Image
+                    <p className="px-6 mt-2 font-bold leading-5 text-bold/90 text-left">
+                      figma
+                    </p>
+                    <Image
                       src={figma}
                       alt="Picture of the author"
                       width={825}

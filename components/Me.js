@@ -92,7 +92,7 @@ const Me = () => {
         >
           <div className="text-2xl flex flex-col items-start   ">
             <h2 className="font-medium">I am a </h2>
-            <h3 className="text-3xl font-bold">Software Developer</h3>
+            <h3 className="text-3xl font-bold">Educator and Software Developer</h3>
           </div>
           <div className=" leading-6  tracking-tight text-xl text-left py-2">
             <div className="mb-2 pl-2 border-l-2 border-green-600">
